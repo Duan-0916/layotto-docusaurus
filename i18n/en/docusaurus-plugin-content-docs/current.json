@@ -1,0 +1,102 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.快速开始": {
+    "message": "快速开始",
+    "description": "The label for category 快速开始 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.actuator": {
+    "message": "actuator",
+    "description": "The label for category actuator in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.api_plugin": {
+    "message": "api_plugin",
+    "description": "The label for category api_plugin in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.configuration": {
+    "message": "configuration",
+    "description": "The label for category configuration in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.cryption": {
+    "message": "cryption",
+    "description": "The label for category cryption in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.delay_queue": {
+    "message": "delay_queue",
+    "description": "The label for category delay_queue in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.email": {
+    "message": "email",
+    "description": "The label for category email in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.faas": {
+    "message": "faas",
+    "description": "The label for category faas in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.file": {
+    "message": "file",
+    "description": "The label for category file in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.集成 Istio 1.10.6 演示": {
+    "message": "集成 Istio 1.10.6 演示",
+    "description": "The label for category 集成 Istio 1.10.6 演示 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.lifecycle": {
+    "message": "lifecycle",
+    "description": "The label for category lifecycle in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.lock": {
+    "message": "lock",
+    "description": "The label for category lock in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.network_filter": {
+    "message": "network_filter",
+    "description": "The label for category network_filter in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.phone": {
+    "message": "phone",
+    "description": "The label for category phone in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.pubsub": {
+    "message": "pubsub",
+    "description": "The label for category pubsub in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.rpc": {
+    "message": "rpc",
+    "description": "The label for category rpc in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.secret": {
+    "message": "secret",
+    "description": "The label for category secret in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.sequencer": {
+    "message": "sequencer",
+    "description": "The label for category sequencer in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.sms": {
+    "message": "sms",
+    "description": "The label for category sms in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.state": {
+    "message": "state",
+    "description": "The label for category state in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.stream_filter": {
+    "message": "stream_filter",
+    "description": "The label for category stream_filter in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.可观测性": {
+    "message": "可观测性",
+    "description": "The label for category 可观测性 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.uds": {
+    "message": "uds",
+    "description": "The label for category uds in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.wasm": {
+    "message": "wasm",
+    "description": "The label for category wasm in sidebar tutorialSidebar"
+  }
+}
