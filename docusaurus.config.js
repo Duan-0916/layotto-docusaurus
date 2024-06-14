@@ -45,7 +45,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-              'https://github.com/mosn/layotto/tree/main/docs/zh/${match[1]}.md',
+            'https://github.com/mosn/layotto/tree/main/docs/zh/${match[1]}.md',
         },
         blog: {
           blogSidebarTitle: '全部博客',
@@ -54,7 +54,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-              'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -64,111 +64,111 @@ const config = {
   ],
 
   themeConfig:
-  /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-      ({
-        docs: {
-          sidebar: {
-            hideable: true,
-            autoCollapseCategories: false,
+    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    ({
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: false,
+        },
+      },
+      // Replace with your project's social card
+      image: 'img/docusaurus-social-card.jpg',
+      navbar: {
+        title: 'Layotto',
+        logo: {
+          alt: 'Layotto Logo',
+          src: 'https://gw.alipayobjects.com/zos/bmw-prod/65518bfc-8ba5-4234-a5c5-2bc065e3a5f0.svg',
+        },
+        items: [
+          {
+            // type: 'docSidebar',
+            // sidebarId: 'mySideBar',
+            type: 'doc',
+            docId: 'README',
+            position: 'left',
+            label: '文档',
           },
-        },
-        // Replace with your project's social card
-        image: 'img/docusaurus-social-card.jpg',
-        navbar: {
-          title: 'Layotto',
-          logo: {
-            alt: 'Layotto Logo',
-            src: 'https://gw.alipayobjects.com/zos/bmw-prod/65518bfc-8ba5-4234-a5c5-2bc065e3a5f0.svg',
+          {
+            type: 'localeDropdown',
+            position: 'right',
           },
-          items: [
-            {
-              // type: 'docSidebar',
-              // sidebarId: 'mySideBar',
-              type: 'doc',
-              docId: 'README',
-              position: 'left',
-              label: '文档',
-            },
-            {
-              type: 'localeDropdown',
-              position: 'right',
-            },
-            {to: '/blog', label: '博客', position: 'left'},
-            {
-              href: 'https://github.com/mosn/layotto',
-              label: 'GitHub',
-              position: 'right',
-            },
-          ],
-        },
-        footer: {
-          style: 'dark',
-          links: [
-            {
-              title: '文档',
-              items: [
-                {
-                  label: '文档',
-                  to: '/docs',
-                },
-              ],
-            },
-            {
-              title: '社区',
-              items: [
-                {
-                  label: 'Stack Overflow',
-                  href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-                },
-                {
-                  label: 'Discord',
-                  href: 'https://discordapp.com/invite/docusaurus',
-                },
-                {
-                  label: 'Twitter',
-                  href: 'https://twitter.com/docusaurus',
-                },
-              ],
-            },
-            {
-              title: 'More',
-              items: [
-                {
-                  label: '博客',
-                  to: '/blog',
-                },
-                {
-                  label: 'GitHub',
-                  href: 'https://github.com/mosn/layotto',
-                },
-              ],
-            },
-          ],
-          copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-        },
-        prism: {
-          theme: prismThemes.github,
-          darkTheme: prismThemes.dracula,
-        },
-        algolia: {
-          appId: 'O9QSL985BS',
-          apiKey: 'ceb5366064b8fbf70959827cf9f69227',
-          indexName: 'ionicframework',
-          contextualSearch: false,
-        },
-        // algolia: {
-        //   // The application ID provided by Algolia
-        //   appId: 'OG7TJEDZ7X',
-        //
-        //   // Public API key: it is safe to commit it
-        //   apiKey: '1774bf301af4818317c4e0d6aeb1def1',
-        //
-        //   indexName: 'sofastack',
-        //
-        //   // Optional: see doc section below
-        //   contextualSearch: true,
-        // },
-      }),
+          {to: '/blog', label: '博客', position: 'left'},
+          {
+            href: 'https://github.com/mosn/layotto',
+            label: 'GitHub',
+            position: 'right',
+          },
+        ],
+      },
+      footer: {
+        style: 'dark',
+        links: [
+          {
+            title: '文档',
+            items: [
+              {
+                label: '文档',
+                to: '/docs',
+              },
+            ],
+          },
+          {
+            title: '社区',
+            items: [
+              {
+                label: 'Stack Overflow',
+                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              },
+              {
+                label: 'Discord',
+                href: 'https://discordapp.com/invite/docusaurus',
+              },
+              {
+                label: 'Twitter',
+                href: 'https://twitter.com/docusaurus',
+              },
+            ],
+          },
+          {
+            title: 'More',
+            items: [
+              {
+                label: '博客',
+                to: '/blog',
+              },
+              {
+                label: 'GitHub',
+                href: 'https://github.com/mosn/layotto',
+              },
+            ],
+          },
+        ],
+        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      },
+      prism: {
+        theme: prismThemes.github,
+        darkTheme: prismThemes.dracula,
+      },
+      algolia: {
+        appId: 'O9QSL985BS',
+        apiKey: 'ceb5366064b8fbf70959827cf9f69227',
+        indexName: 'ionicframework',
+        contextualSearch: false,
+      },
+      // algolia: {
+      //   // The application ID provided by Algolia
+      //   appId: 'OG7TJEDZ7X',
+      //
+      //   // Public API key: it is safe to commit it
+      //   apiKey: '1774bf301af4818317c4e0d6aeb1def1',
+      //
+      //   indexName: 'sofastack',
+      //
+      //   // Optional: see doc section below
+      //   contextualSearch: true,
+      // },
+    }),
 };
 
 export default config;
