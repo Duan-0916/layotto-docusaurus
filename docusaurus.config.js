@@ -13,7 +13,7 @@ const config = {
   favicon: 'https://gw.alipayobjects.com/zos/bmw-prod/65518bfc-8ba5-4234-a5c5-2bc065e3a5f0.svg',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://mosn.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -38,16 +38,17 @@ const config = {
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      {
         docs: {
-          sidebarPath: './sidebars.js',
+          sidebarPath: './sidebar.js',
+          // sidebarPath: require.resolve('./sidebar.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/mosn/layotto/tree/main/docs/zh/${match[1]}.md',
         },
         blog: {
-          blogSidebarTitle: 'All posts',
+          blogSidebarTitle: '全部博客',
           blogSidebarCount: 'ALL',
           showReadingTime: true,
           // Please change this to your repo.
@@ -58,13 +59,19 @@ const config = {
         theme: {
           customCss: './src/css/custom.css',
         },
-      }),
+      },
     ],
   ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: false,
+        },
+      },
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
@@ -75,16 +82,18 @@ const config = {
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            // type: 'docSidebar',
+            // sidebarId: 'mySideBar',
+            type: 'doc',
+            docId: 'README',
             position: 'left',
-            label: 'Tutorial',
+            label: '文档',
           },
           {
             type: 'localeDropdown',
             position: 'right',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: '博客', position: 'left'},
           {
             href: 'https://github.com/mosn/layotto',
             label: 'GitHub',
@@ -96,16 +105,16 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: '文档',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/README.md',
+                label: '文档',
+                to: '/docs',
               },
             ],
           },
           {
-            title: 'Community',
+            title: '社区',
             items: [
               {
                 label: 'Stack Overflow',
@@ -125,12 +134,12 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
+                label: '博客',
                 to: '/blog',
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/mosn/layotto',
               },
             ],
           },
@@ -141,7 +150,27 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
+      algolia: {
+        appId: 'O9QSL985BS',
+        apiKey: 'ceb5366064b8fbf70959827cf9f69227',
+        indexName: 'ionicframework',
+        contextualSearch: false,
+      },
+      // algolia: {
+      //   // The application ID provided by Algolia
+      //   appId: 'OG7TJEDZ7X',
+      //
+      //   // Public API key: it is safe to commit it
+      //   apiKey: '1774bf301af4818317c4e0d6aeb1def1',
+      //
+      //   indexName: 'sofastack',
+      //
+      //   // Optional: see doc section below
+      //   contextualSearch: true,
+      // },
     }),
 };
 
 export default config;
+
+
