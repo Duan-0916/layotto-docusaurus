@@ -38,16 +38,17 @@ const config = {
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      {
         docs: {
-          sidebarPath: './sidebars.js',
+          sidebarPath: './sidebar.js',
+          // sidebarPath: require.resolve('./sidebar.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-              'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+              'https://github.com/mosn/layotto/tree/main/docs/zh/${match[1]}.md',
         },
         blog: {
-          blogSidebarTitle: 'All posts',
+          blogSidebarTitle: '全部博客',
           blogSidebarCount: 'ALL',
           showReadingTime: true,
           // Please change this to your repo.
@@ -58,13 +59,19 @@ const config = {
         theme: {
           customCss: './src/css/custom.css',
         },
-      }),
+      },
     ],
   ],
 
   themeConfig:
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
       ({
+        docs: {
+          sidebar: {
+            hideable: true,
+            autoCollapseCategories: false,
+          },
+        },
         // Replace with your project's social card
         image: 'img/docusaurus-social-card.jpg',
         navbar: {
@@ -75,16 +82,18 @@ const config = {
           },
           items: [
             {
-              type: 'docSidebar',
-              sidebarId: 'tutorialSidebar',
+              // type: 'docSidebar',
+              // sidebarId: 'mySideBar',
+              type: 'doc',
+              docId: 'README',
               position: 'left',
-              label: 'Tutorial',
+              label: '文档',
             },
             {
               type: 'localeDropdown',
               position: 'right',
             },
-            {to: '/blog', label: 'Blog', position: 'left'},
+            {to: '/blog', label: '博客', position: 'left'},
             {
               href: 'https://github.com/mosn/layotto',
               label: 'GitHub',
@@ -96,16 +105,16 @@ const config = {
           style: 'dark',
           links: [
             {
-              title: 'Docs',
+              title: '文档',
               items: [
                 {
-                  label: 'Tutorial',
-                  to: '/docs/README.md',
+                  label: '文档',
+                  to: '/docs',
                 },
               ],
             },
             {
-              title: 'Community',
+              title: '社区',
               items: [
                 {
                   label: 'Stack Overflow',
@@ -125,7 +134,7 @@ const config = {
               title: 'More',
               items: [
                 {
-                  label: 'Blog',
+                  label: '博客',
                   to: '/blog',
                 },
                 {
@@ -163,6 +172,3 @@ const config = {
 };
 
 export default config;
-
-
-
