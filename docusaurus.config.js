@@ -44,8 +44,18 @@ const config = {
           // sidebarPath: require.resolve('./sidebar.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/mosn/layotto/tree/main/docs/zh/${match[1]}.md',
+          //https://github.com/mosn/layotto/edit/main/docs/zh/start/README.md
+          editUrl:({  docPath, locale }) => {
+            //把docPath 拆分，中间加上对应的路径。
+            let newDocPath;
+
+            if (locale != 'en') {
+              return `https://github.com/mosn/layotto/edit/main/`+newDocPath+`.md`;
+            }else{
+              return `https://github.com/mosn/layotto/edit/main/`+newDocPath+`.md`;
+            }
+
+          },
         },
         blog: {
           blogSidebarTitle: '全部博客',
