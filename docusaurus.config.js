@@ -50,9 +50,13 @@ const config = {
             let newDocPath;
 
             if (locale != 'en') {
-              return `https://github.com/mosn/layotto/edit/main/`+newDocPath+`.md`;
+              const pathSegments = docPath.split('/');
+              newDocPath = ['docs', 'zh', ...pathSegments].join('/');
+              return `https://github.com/mosn/layotto/edit/main/`+newDocPath;
             }else{
-              return `https://github.com/mosn/layotto/edit/main/`+newDocPath+`.md`;
+              const pathSegments = docPath.split('/');
+              newDocPath = ['docs', 'en', ...pathSegments].join('/');
+              return `https://github.com/mosn/layotto/edit/main/`+newDocPath;
             }
 
           },
@@ -85,7 +89,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Layotto',
+        // title: '',
         logo: {
           alt: 'Layotto Logo',
           src: 'https://gw.alipayobjects.com/zos/bmw-prod/65518bfc-8ba5-4234-a5c5-2bc065e3a5f0.svg',
@@ -110,51 +114,6 @@ const config = {
             position: 'right',
           },
         ],
-      },
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: '文档',
-            items: [
-              {
-                label: '文档',
-                to: '/docs',
-              },
-            ],
-          },
-          {
-            title: '社区',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: '博客',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/mosn/layotto',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
