@@ -1,3 +1,5 @@
+name: Deploy index to algolia
+
 on:
   # Runs on pushes targeting the default branch
   push:
