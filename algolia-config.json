@@ -1,7 +1,7 @@
 {
   "index_name": "layotto",
   "start_urls": [
-    "https://15669072513.github.io/layotto-docusaurus"
+    "https://15669072513.github.io/layotto-docusaurus/docs"
   ],
   "stop_urls": [],
   "selectors": {
