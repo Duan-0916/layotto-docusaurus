@@ -120,23 +120,16 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
       algolia: {
-        appId: 'O9QSL985BS',
-        apiKey: 'ceb5366064b8fbf70959827cf9f69227',
-        indexName: 'ionicframework',
-        contextualSearch: false,
+          appId: 'B0I4Q5CLN8',
+          apiKey: '79f410a7e620927c50c3ae6c8c9af5bb',
+          indexName: 'layotto',
+          contextualSearch: false,
+        //测试index
+        // appId: 'O9QSL985BS',
+        // apiKey: 'ceb5366064b8fbf70959827cf9f69227',
+        // indexName: 'ionicframework',
+        // contextualSearch: false,
       },
-      // algolia: {
-      //   // The application ID provided by Algolia
-      //   appId: 'OG7TJEDZ7X',
-      //
-      //   // Public API key: it is safe to commit it
-      //   apiKey: '1774bf301af4818317c4e0d6aeb1def1',
-      //
-      //   indexName: 'sofastack',
-      //
-      //   // Optional: see doc section below
-      //   contextualSearch: true,
-      // },
     }),
 };
 
