@@ -1,0 +1,16 @@
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["main"]
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: darrenjennings/algolia-docsearch-action@master
+        with:
+          algolia_application_id: 'B0I4Q5CLN8'
+          algolia_api_key: '478d2fe7bdad5ff46b87f1e8e4662e81'
+          file: 'algolia-config.json'
