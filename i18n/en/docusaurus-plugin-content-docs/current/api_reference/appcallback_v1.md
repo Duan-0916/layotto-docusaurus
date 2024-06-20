@@ -1,7 +1,4 @@
 
-
-<a name="appcallback.proto"></a>
-
 # appcallback.proto
 <a name="top"></a>
 

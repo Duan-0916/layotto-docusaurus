@@ -1,5 +1,5 @@
    
-# EmailService API demo
+# 如何调用 Layotto EmailService API
 
 本示例演示如何调用 Layotto EmailService API.
 

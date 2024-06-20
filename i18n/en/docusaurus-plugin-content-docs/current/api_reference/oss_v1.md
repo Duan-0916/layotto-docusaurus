@@ -1,7 +1,4 @@
 
-
-<a name="oss.proto"></a>
-
 # oss.proto
 <a name="top"></a>
 

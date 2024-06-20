@@ -1,4 +1,4 @@
-# Actuator Http API
+# 执行器 Http API
 
 Layotto Actuator API提供健康检查、查看运行时元数据等功能，用于查看Layotto和app的健康状况、运行时元数据，支持集成进开源基础设施（例如可以集成进k8s健康检查）
 

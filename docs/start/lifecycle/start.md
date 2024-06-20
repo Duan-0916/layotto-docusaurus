@@ -1,5 +1,5 @@
    
-# Lifecycle API demo
+# 如何调用 Layotto Lifecycle API
 
 本示例演示如何调用 Layotto Lifecycle API.
 

@@ -1,4 +1,4 @@
-# Dubbo JSON RPC Example
+# Dubbo JSON RPC 事例
 *注意: 这个例子需要运行在go v1.17下*
 ## 快速开始
 ### step 1. 修改配置文件，加入`dubbo_json_rpc`插件
