@@ -1,4 +1,4 @@
-## layotto component reference
+# layotto component reference
 
 ### Background
 

@@ -1,5 +1,5 @@
    
-# SmsService API demo
+# 如何调用 Layotto SmsService API
 
 本示例演示如何调用 Layotto SmsService API.
 

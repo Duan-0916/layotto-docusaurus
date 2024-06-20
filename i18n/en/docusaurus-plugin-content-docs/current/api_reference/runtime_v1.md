@@ -1,7 +1,4 @@
 
-
-<a name="runtime.proto"></a>
-
 # runtime.proto
 <a name="top"></a>
 
