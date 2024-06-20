@@ -30,108 +30,87 @@ const sidebars = {
       items: [
         {
           type: "doc",
-          label: "使用State API",
+
           id: "start/state/start",
         },
         {
           type: "category",
           label: "使用Configuration API",
           items:[
+            "start/configuration/start-apollo",
             {
               type: "doc",
-              label: "使用Apollo配置中心",
-              id: "start/configuration/start-apollo",
-            },
-            {
-              type: "doc",
-              label: "使用Etcd配置中心",
               id: "start/configuration/start",
             },
             {
               type: "doc",
-              label: "使用Nacos配置中心",
               id: "start/configuration/start-nacos",
             },
           ]
         },
         {
           type: "doc",
-          label: "发布、订阅消息",
           id: "start/pubsub/start",
         },
         {
           type: "doc",
-          label: "(建设中) 使用 DelayQueue API",
           id: "start/delay_queue/start",
         },
         {
           type: "doc",
-          label: "使用分布式锁 API",
           id: "start/lock/start",
         },
         {
           type: "doc",
-          label: "使用Sequencer API生成分布式自增id",
           id: "start/sequencer/start",
         },
         {
           type: "doc",
-          label: "使用 Secret API",
           id: "start/secret/start",
         },
         {
           type: "doc",
-          label: "进行RPC调用",
           id: "start/rpc/helloworld",
         },
         {
           type: "doc",
-          label: "使用File API",
           id: "start/file/minio",
         },
         {
           type: "doc",
-          label: "使用 OSS API",
           id: "start/oss/oss",
         },
         {
           type: "doc",
-          label: "使用UDS通信",
           id: "start/uds/start",
         },
         {
           type: "doc",
-          label: "(建设中)使用 sms API",
           id: "start/sms/start",
         },
         {
           type: "doc",
-          label: "(建设中)使用 cryption API",
           id: "start/cryption/start",
         },
         {
           type: "doc",
-          label: "(建设中)使用 phone API",
           id: "start/phone/start",
         },
         {
           type: "doc",
-          label: "(建设中)使用 email API",
           id: "start/email/start",
         },
-        { type: "doc", label: "使用 lifecycle API", id: "start/lifecycle/start", },
+        { type: "doc", id: "start/lifecycle/start", },
         {
           type: 'category',
           label: 'API插件',
           items: [
             {
               type: 'doc',
-              label: '注册您自己的API',
               id: 'start/api_plugin/helloworld',
             },
             {
               type: 'doc',
-              label: '自动生成 API 插件',
               id: 'start/api_plugin/generate',
             }
             ]},
@@ -141,12 +120,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  label: '集成 Istio 1.10.6 演示',
                   id: 'start/istio/README',
                 },
                 {
                   type: 'doc',
-                  label: '集成 Istio 1.5.x 演示',
                   id: 'start/istio/start',
                 },
               ],
@@ -157,7 +134,6 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  label: 'Dump TCP 流量',
                   id: 'start/network_filter/tcpcopy',
                 },
               ],
@@ -168,7 +144,6 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  label: '方法级别限流',
                   id: 'start/stream_filter/flow_control',
                 },
               ],
@@ -184,39 +159,32 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  label: 'Trace, Metrics',
                   id: 'start/trace/trace',
                 },
                 {
                   type: 'doc',
-                  label: 'Trace 接入 Skywalking',
                   id: 'start/trace/skywalking',
                 },
                 {
                   type: 'doc',
-                  label: 'Trace 接入 Zipkin',
                   id: 'start/trace/zipkin',
                 },
                 {
                   type: 'doc',
-                  label: 'Trace 接入 Jaeger',
                   id: 'start/trace/jaeger',
                 },
                 {
                   type: 'doc',
-                  label: 'Metrics 接入 Prometheus',
                   id: 'start/trace/prometheus',
                 },
               ],
             },
             {
               type: 'doc',
-              label: '将业务逻辑通过 WASM 下沉进sidecar',
               id: 'start/wasm/start',
             },
             {
               type: 'doc',
-              label: '基于 WASM 跟 Runtime 实现的 Faas 模型',
               id: 'start/faas/start',
             }]
     },
@@ -236,42 +204,34 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  label: 'File API',
                   id: 'building_blocks/file/file',
                 },
                 {
                   type: 'doc',
-                  label: 'Actuator API',
                   id: 'building_blocks/actuator/actuator',
                 },
                 {
                   type: 'doc',
-                  label: 'State API',
                   id: 'building_blocks/state/reference',
                 },
                 {
                   type: 'doc',
-                  label: 'Sequencer API',
                   id: 'building_blocks/sequencer/reference',
                 },
                 {
                   type: 'doc',
-                  label: 'Distributed Lock API',
                   id: 'building_blocks/lock/reference',
                 },
                 {
                   type: 'doc',
-                  label: 'Pub/Sub API',
                   id: 'building_blocks/pubsub/reference',
                 },
                 {
                   type: 'doc',
-                  label: 'RPC API',
                   id: 'building_blocks/rpc/reference',
                 },
                 {
                   type: 'doc',
-                  label: 'Configuration API',
                   id: 'building_blocks/configuration/reference',
                 },
                 {
@@ -280,12 +240,10 @@ const sidebars = {
                   items: [
                     {
                       type: 'doc',
-                      label: 'API插件',
                       id: 'design/api_plugin/design',
                     },
                     {
                       type: 'doc',
-                      label: 'pluggable component 组件',
                       id: 'design/pluggable/usage',
                     },
                   ],
@@ -293,30 +251,30 @@ const sidebars = {
               ],
             },
             {
-              type: 'doc',
-              label: 'gRPC API 接口文档',
-              id: 'api_reference/README',
+              "type": "doc",
+              "id": "api_reference/README"
             },
             {
-              type: 'link',
+              "type": "link",
               label: 'java sdk',
-              href: 'https://github.com/layotto/java-sdk',
+              "href": "https://github.com/layotto/java-sdk"
             },
             {
-              type: 'link',
+              "type": "link",
               label: '.net sdk',
-              href: 'https://github.com/layotto/dotnet-sdk',
+
+              "href": "https://github.com/layotto/dotnet-sdk"
             },
             {
-              type: 'link',
+              "type": "link",
               label: 'js sdk',
-              href: 'https://github.com/layotto/js-sdk',
+              "href": "https://github.com/layotto/js-sdk"
             },
             {
-              type: 'doc',
-              label: 'go sdk',
-              id: 'sdk_reference/go/start',
-            },
+              "type": "doc",
+              "id": "sdk_reference/go/start"
+            }
+
           ],
         },
 
@@ -332,7 +290,6 @@ const sidebars = {
       items: [
         {
           type: 'doc',
-          label: 'Layotto 配置文件介绍',
           id: 'configuration/overview',
         },
         {
@@ -353,12 +310,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  label: 'Redis',
                   id: 'component_specs/state/redis',
                 },
                 {
                   type: 'doc',
-                  label: '其他组件',
                   id: 'component_specs/state/others',
                 },
               ],
@@ -373,12 +328,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  label: 'Redis',
                   id: 'component_specs/pubsub/redis',
                 },
                 {
                   type: 'doc',
-                  label: '其他组件',
                   id: 'component_specs/pubsub/others',
                 },
               ],
@@ -393,85 +346,70 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  label: 'Redis',
                   id: 'component_specs/lock/redis',
                 },
                 {
                   type: 'doc',
-                  label: 'Etcd',
                   id: 'component_specs/lock/etcd',
                 },
                 {
                   type: 'doc',
-                  label: 'Zookeeper',
                   id: 'component_specs/lock/zookeeper',
                 },
                 {
                   type: 'doc',
-                  label: 'Consul',
                   id: 'component_specs/lock/consul',
                 },
                 {
                   type: 'doc',
-                  label: 'MongoDB',
                   id: 'component_specs/lock/mongo',
                 },
               ],
             },
             {
               type: 'doc',
-              label: 'Configuration',
               id: 'component_specs/configuration/etcd',
             },
             {
               type: 'doc',
-              label: 'File',
               id: 'component_specs/file/oss',
             },
             {
               type: 'category',
               label: 'Sequencer',
-              items: [
+              items: [{
+                "type": "doc",
+                "id": "component_specs/sequencer/etcd"
+              },
                 {
-                  type: 'doc',
-                  label: 'Etcd',
-                  id: 'component_specs/sequencer/etcd',
+                  "type": "doc",
+                  "id": "component_specs/sequencer/redis"
                 },
                 {
-                  type: 'doc',
-                  label: 'Redis',
-                  id: 'component_specs/sequencer/redis',
+                  "type": "doc",
+                  "id": "component_specs/sequencer/zookeeper"
                 },
                 {
-                  type: 'doc',
-                  label: 'Zookeeper',
-                  id: 'component_specs/sequencer/zookeeper',
+                  "type": "doc",
+                  "id": "component_specs/sequencer/mongo"
                 },
                 {
-                  type: 'doc',
-                  label: 'MongoDB',
-                  id: 'component_specs/sequencer/mongo',
+                  "type": "doc",
+                  "id": "component_specs/sequencer/mysql"
                 },
                 {
-                  type: 'doc',
-                  label: 'Mysql',
-                  id: 'component_specs/sequencer/mysql',
-                },
-                {
-                  type: 'doc',
-                  label: 'Snowflake',
-                  id: 'component_specs/sequencer/snowflake',
-                },
+                  "type": "doc",
+                  "id": "component_specs/sequencer/snowflake"
+                }
+
               ],
             },
             {
               type: 'doc',
-              label: 'Secret Store',
               id: 'component_specs/secret/common',
             },
             {
               type: 'doc',
-              label: '自定义组件',
               id: 'component_specs/custom/common',
             },
           ],
@@ -480,17 +418,14 @@ const sidebars = {
     },
     {
       type: 'doc',
-      label: '如何部署、升级 Layotto',
       id: 'operation/README',
     },
     {
       type: 'doc',
-      label: 'Layotto sidecar injector',
       id: 'operation/sidecar_injector',
     },
     {
       type: 'doc',
-      label: '如何本地开发、本地调试',
       id: 'operation/local',
     },
   ]
@@ -579,71 +514,32 @@ const sidebars = {
   "type": "category",
   "label": "贡献指南",
   "items": [
-    {
-      "type": "doc",
-      "label": "Layotto 贡献指南",
-      "id": "development/CONTRIBUTING"
-    },
-    {
-      "type": "doc",
-      "label": "新手攻略：从零开始成为 Layotto 贡献者",
-      "id": "development/start-from-zero"
-    },
+    "development/CONTRIBUTING",
+    "development/start-from-zero"
+    ,
     {
       "type": "category",
       "label": "想要贡献文档?",
-      "items": [
-        {
-          "type": "doc",
-          "label": "文档贡献指南",
-          "id": "development/contributing-doc"
-        },
-        {
-          "type": "doc",
-          "label": "使用工具自动测试 Quickstart 文档",
-          "id": "development/test-quickstart"
-        }
+      "items": ["development/contributing-doc",
+        "development/test-quickstart"
       ]
-    },
-    {
-      "type": "doc",
-      "label": "想要开发新的组件?",
-      "id": "development/developing-component"
-    },
-    {
-      "type": "doc",
-      "label": "组件引用开发指南",
-      "id": "development/component_ref/component_ref"
-    },
+    },"development/developing-component",
+    "development/component_ref/component_ref",
     {
       "type": "category",
       "label": "想要修改proto文件或API定义？",
-      "items": [
-        {
-          "type": "doc",
-          "label": "如何基于proto文件生成代码、接口文档",
-          "id": "api_reference/how_to_generate_api_doc"
-        },
-        {
-          "type": "doc",
-          "label": "proto文件注释规范",
-          "id": "api_reference/comment_spec_of_proto"
-        },
-        {
-          "type": "doc",
-          "label": "新增API时的开发规范",
-          "id": "development/developing-api"
-        }
+      "items": ["api_reference/how_to_generate_api_doc",
+        "api_reference/comment_spec_of_proto",
+        "development/developing-api"
+
       ]
     },
     {
       "type": "doc",
-      "label": "Layotto 四大 Github Workflows 说明",
       "id": "development/github-workflows"
     },
     {
       "type": "doc",
-      "label": "Layotto 命令行工具指南",
       "id": "development/commands"
     },
     {
@@ -652,19 +548,16 @@ const sidebars = {
       "items": [
         {
           "type": "doc",
-          "label": "新手任务 (good first issue) 的 label 规范",
           "id": "development/label-spec"
         }
       ]
     },
     {
       "type": "doc",
-      "label": "发布手册",
       "id": "development/release-guide"
     },
     {
       "type": "doc",
-      "label": "待解决的问题",
       "id": "development/problems-to-solve"
     }
   ]
@@ -673,27 +566,12 @@ const sidebars = {
       "type": "category",
       "label": "社区",
       "items": [
-        {
-          "type": "doc",
-          "label": "社区会议",
-          "id": "community/meeting"
-        },
-        {
-          "type": "doc",
-          "label": "SOFAStack & MOSN 社区角色说明",
-          "id": "community/governance"
-        },
-        {
-          "type": "doc",
-          "label": "Layotto社区晋升规则",
-          "id": "community/promote"
-        },
-        {
-          "type": "doc",
-          "label": "Layotto社区成员",
-          "id": "community/people"
-        }
+        "community/meeting",
+        "community/governance",
+        "community/promote",
+        "community/people"
       ]
+
     },
     // {
     //   "type": "category",
