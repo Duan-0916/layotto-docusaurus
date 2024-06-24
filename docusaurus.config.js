@@ -137,12 +137,7 @@ const config = {
           appId: 'B0I4Q5CLN8',
           apiKey: '79f410a7e620927c50c3ae6c8c9af5bb',
           indexName: 'layotto',
-          contextualSearch: false,
-        //测试index
-        // appId: 'O9QSL985BS',
-        // apiKey: 'ceb5366064b8fbf70959827cf9f69227',
-        // indexName: 'ionicframework',
-        // contextualSearch: false,
+          contextualSearch: true,
       },
     }),
 };

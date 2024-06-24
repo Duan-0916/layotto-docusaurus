@@ -622,7 +622,6 @@ const sidebars = {
     // },
     {
       "type": "doc",
-      "label": "视频合集",
       "id": "video/README"
     }
 
