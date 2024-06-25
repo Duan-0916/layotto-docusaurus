@@ -9,9 +9,6 @@
  Create as many sidebars as you want.
  */
 
-// @ts-check
-
-/** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
 
   mySidebar: [
@@ -188,7 +185,6 @@ const sidebars = {
               id: 'start/faas/start',
             }]
     },
-      //
     {
       type: 'doc',
       label: '线上实验室',
@@ -509,121 +505,74 @@ const sidebars = {
         },
       ],
     },
-
-{
-  "type": "category",
-  "label": "贡献指南",
-  "items": [
-    "development/CONTRIBUTING",
-    "development/start-from-zero"
-    ,
     {
-      "type": "category",
-      "label": "想要贡献文档?",
-      "items": ["development/contributing-doc",
-        "development/test-quickstart"
-      ]
-    },"development/developing-component",
-    "development/component_ref/component_ref",
-    {
-      "type": "category",
-      "label": "想要修改proto文件或API定义？",
-      "items": ["api_reference/how_to_generate_api_doc",
-        "api_reference/comment_spec_of_proto",
-        "development/developing-api"
-
-      ]
-    },
-    {
-      "type": "doc",
-      "id": "development/github-workflows"
-    },
-    {
-      "type": "doc",
-      "id": "development/commands"
-    },
-    {
-      "type": "category",
-      "label": "如何给 issue 打 label",
-      "items": [
+      type: "category",
+      label: "贡献指南",
+      items: [
+        "development/CONTRIBUTING",
+        "development/start-from-zero",
         {
-          "type": "doc",
-          "id": "development/label-spec"
+          type: "category",
+          label: "想要贡献文档?",
+          items: ["development/contributing-doc", "development/test-quickstart"]
+        },
+        "development/developing-component",
+        "development/component_ref/component_ref",
+        {
+          type: "category",
+          label: "想要修改proto文件或API定义？",
+          items: [
+            "api_reference/how_to_generate_api_doc",
+            "api_reference/comment_spec_of_proto",
+            "development/developing-api"
+          ]
+        },
+        {
+          type: "doc",
+          id: "development/github-workflows"
+        },
+        {
+          type: "doc",
+          id: "development/commands"
+        },
+        {
+          type: "category",
+          label: "如何给 issue 打 label",
+          items: [
+            {
+              type: "doc",
+              id: "development/label-spec"
+            }
+          ]
+        },
+        {
+          type: "doc",
+          id: "development/release-guide"
+        },
+        {
+          type: "doc",
+          id: "development/problems-to-solve"
         }
       ]
-    },
-    {
-      "type": "doc",
-      "id": "development/release-guide"
-    },
-    {
-      "type": "doc",
-      "id": "development/problems-to-solve"
     }
-  ]
-},
+,
     {
-      "type": "category",
-      "label": "社区",
-      "items": [
+      type: "category",
+      label: "社区",
+      items: [
         "community/meeting",
         "community/governance",
         "community/promote",
         "community/people"
       ]
-
     },
-    // {
-    //   "type": "category",
-    //   "label": "博客",
-    //   "items": [
-    //     {
-    //       "type": "doc",
-    //       "label": "蚂蚁云原生应用运行时的探索和实践 - ArchSummit 上海",
-    //       "id": "blog/exploration-and-practice-of-antcloud-native-application-runtime-archsummit-shanghai"
-    //     },
-    //     {
-    //       "type": "doc",
-    //       "label": "MOSN子项目Layotto：开启服务网格+应用运行时新篇章",
-    //       "id": "blog/mosn-subproject-layotto-opening-a-new-chapter-in-service-grid-application-runtime/index"
-    //     },
-    //     {
-    //       "type": "category",
-    //       "label": "源码分析",
-    //       "items": [
-    //         {
-    //           "type": "doc",
-    //           "label": "启动流程",
-    //           "id": "blog/code/start_process/start_process"
-    //         },
-    //         {
-    //           "type": "doc",
-    //           "label": "处理 RPC 请求",
-    //           "id": "blog/code/layotto-rpc/index"
-    //         },
-    //         {
-    //           "type": "doc",
-    //           "label": "WebAssembly 相关",
-    //           "id": "blog/code/webassembly/index"
-    //         },
-    //         {
-    //           "type": "doc",
-    //           "label": "7层流量治理，接口限流",
-    //           "id": "blog/code/flowcontrol/flowcontrol_code_analyze"
-    //         },
-    //         {
-    //           "type": "doc",
-    //           "label": "源码解析 4层流量治理，tcp流量dump",
-    //           "id": "blog/tcpcopy_code_analyze"
-    //         }
-    //       ]
-    //     }
-    //   ]
-    // },
+
     {
-      "type": "doc",
-      "id": "video/README"
+      type: "doc",
+      label: "视频合集",
+      id: "video/README"
     }
+
 
 
   ]

@@ -1,6 +1,6 @@
 {
   "theme.ErrorPageContent.title": {
-    "message": "页面已崩溃。",
+    "message": "page crashed",
     "description": "The title of the fallback page when the page crashed"
   },
   "theme.BackToTopButton.buttonAriaLabel": {
@@ -76,11 +76,11 @@
     "description": "The ARIA label for the docs pagination"
   },
   "theme.docs.paginator.previous": {
-    "message": "上一页",
+    "message": "pre page",
     "description": "The label used to navigate to the previous doc"
   },
   "theme.docs.paginator.next": {
-    "message": "下一页",
+    "message": "next page",
     "description": "The label used to navigate to the next doc"
   },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
@@ -107,7 +107,7 @@
     "description": "The label used to tell the user to check the latest version"
   },
   "theme.docs.versions.latestVersionLinkLabel": {
-    "message": "最新版本",
+    "message": "latest version",
     "description": "The label used for the latest version suggestion link label"
   },
   "theme.common.headingLinkTitle": {
@@ -115,7 +115,7 @@
     "description": "Title for link to heading"
   },
   "theme.common.editThisPage": {
-    "message": "编辑此页",
+    "message": "Edit this page",
     "description": "The link label to edit the current page"
   },
   "theme.lastUpdated.atDate": {
@@ -135,11 +135,11 @@
     "description": "The label for the navbar versions dropdown on mobile view"
   },
   "theme.NotFound.title": {
-    "message": "找不到页面",
+    "message": "404 page",
     "description": "The title of the 404 page"
   },
   "theme.tags.tagsListLabel": {
-    "message": "标签：",
+    "message": "tag：",
     "description": "The label alongside a tag list"
   },
   "theme.AnnouncementBar.closeButtonAriaLabel": {
@@ -147,23 +147,23 @@
     "description": "The ARIA label for close button of announcement bar"
   },
   "theme.admonition.caution": {
-    "message": "警告",
+    "message": "warn",
     "description": "The default label used for the Caution admonition (:::caution)"
   },
   "theme.admonition.danger": {
-    "message": "危险",
+    "message": "danger",
     "description": "The default label used for the Danger admonition (:::danger)"
   },
   "theme.admonition.info": {
-    "message": "信息",
+    "message": "info",
     "description": "The default label used for the Info admonition (:::info)"
   },
   "theme.admonition.note": {
-    "message": "备注",
+    "message": "note",
     "description": "The default label used for the Note admonition (:::note)"
   },
   "theme.admonition.tip": {
-    "message": "提示",
+    "message": "tip",
     "description": "The default label used for the Tip admonition (:::tip)"
   },
   "theme.admonition.warning": {
@@ -275,11 +275,11 @@
     "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
   },
   "theme.tags.tagsPageTitle": {
-    "message": "标签",
+    "message": "Tag",
     "description": "The title of the tag list page"
   },
   "theme.unlistedContent.title": {
-    "message": "未列出页",
+    "message": "Unlisted",
     "description": "The unlisted content banner title"
   },
   "theme.unlistedContent.message": {

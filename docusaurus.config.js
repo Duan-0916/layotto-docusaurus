@@ -40,8 +40,8 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       {
         docs: {
-          sidebarPath: './sidebars.js',
-          // sidebarPath: require.resolve('./sidebar.js'),
+          sidebarPath: require.resolve('./sidebars.js'),
+          // sidebarPath:
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           //https://github.com/mosn/layotto/edit/main/docs/zh/start/README.md
@@ -83,7 +83,7 @@ const config = {
       docs: {
         sidebar: {
           hideable: true,
-          autoCollapseCategories: false,
+          autoCollapseCategories: true,
         },
       },
       // Replace with your project's social card

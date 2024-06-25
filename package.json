@@ -11,7 +11,11 @@
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
-    "write-heading-ids": "docusaurus write-heading-ids"
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "translations": "local-crowdin-api translations",
+    "crowdin:upload": "crowdin upload sources --auto-update --config ./crowdin.yaml",
+    "crowdin:download": "crowdin download --verbose --config ./crowdin.yaml",
+    "crowdin:sync": "npm crowdin:upload && npm crowdin:download"
   },
   "dependencies": {
     "@docusaurus/core": "3.4.0",

@@ -6,7 +6,7 @@ Layotto 基于 Apache 2.0 许可发布，遵循标准的 Github 开发流程，�
 - 首次提交 Pull Request 后，您需要先签署[贡献者许可协议（CLA）](http://cla.sofastack.tech/mosn)
 - 优化您的 Pull Request，确保能通过自动化测试(CI) 
   - 如果是首次贡献者，您提交 Pull Request 是没法自动触发 CI 的，需要由项目维护者手动运行 CI. 这是 Github 的默认限制, 但您做过一次贡献、成为 contributor 后，再提新 PR 就能自动触发 CI 了。
-  - CI 的详细说明见 [Layotto GitHub Workflows](docs/development/github-workflows)
+  - CI 的详细说明见 [Layotto GitHub Workflows](github-workflows)
   - 为了方便开发， Layotto 有一套 make 脚本，可以在本地跑检查、跑测试，在本地启动好 docker 后，敲 `make all` 即可，详见[文档说明](docs/development/commands)
 - 由社区维护者来 code review
   - code review 如果有修改意见，会在 PR 下留言
@@ -25,7 +25,7 @@ Layotto 基于 Apache 2.0 许可发布，遵循标准的 Github 开发流程，�
 7. 确保提交 Pull Request  之前所有的测试能够正确通过。你可以本地启动好 docker 后，执行 `make all` 去格式化你的代码，进行风格测试，linter 规范测试，单元测试，以及集成测试。但是执行前[请先查看注意事项](docs/development/commands)
 9. 按照 Github 工作流提交 Pull Request  ，并遵循 Pull Request 的规则。
 
-> Layotto 提供了很多方便本地开发的命令行工具，请在[这里](docs/development/commands)进行查阅
+> Layotto 提供了很多方便本地开发的命令行工具，请在[这里](commands)进行查阅
 
 ## 版本命名约定
 
