@@ -1,4 +1,4 @@
-## FaaS QuickStart
+# FaaS QuickStart
 
 ### 1. Features
 

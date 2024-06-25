@@ -109,7 +109,7 @@
     "description": "The label for link js sdk in sidebar mySidebar, linking to https://github.com/layotto/js-sdk"
   },
   "sidebar.mySidebar.doc.首页": {
-    "message": "首页",
+    "message": "Home Page",
     "description": "The label for the doc item 首页 in sidebar mySidebar, linking to the doc README"
   },
   "sidebar.mySidebar.doc.使用State API": {
