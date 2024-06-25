@@ -15,7 +15,8 @@
     "translations": "local-crowdin-api translations",
     "crowdin:upload": "crowdin upload sources --auto-update --config ./crowdin.yaml",
     "crowdin:download": "crowdin download --verbose --config ./crowdin.yaml",
-    "crowdin:sync": "npm crowdin:upload && npm crowdin:download"
+    "crowdin:sync": "docusaurus write-translations && crowdin upload && crowdin download"
+
   },
   "dependencies": {
     "@docusaurus/core": "3.4.0",
