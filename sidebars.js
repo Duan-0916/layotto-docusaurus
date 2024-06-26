@@ -469,7 +469,6 @@ const sidebars = {
         },
         {
           type: 'doc',
-          label: '支持Dapr API',
           id: 'design/api_plugin/dapr_api',
         },
         {

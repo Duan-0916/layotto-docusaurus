@@ -1,13 +1,16 @@
-# 基于MinIO OSS实现文件的增删改查
+# Addition and deletion of files based on MinIO OSS
 
-## 快速开始
+## Quick Start
 
-Layotto提供了访问文件的示例 [demo](https://github.com/mosn/layotto/blob/main/demo/file/client.go) ,该示例实现了文件的增删改查操作。
+Layotto provides examples [demo](https://github.com/mosn/layotto/blob/main/demo/file/client.go) for access files.
 
-### step 1. 启动 MinIO 和 Layotto
+### step 1. Start MinIO and Layotto
+
 <!-- tabs:start -->
-#### **使用 Docker Compose**
-您可以使用 docker-compose 启动 MinIO 和 Layotto
+
+#### **Using Docker Compose**
+
+You can start MinIO and Layotto with docker-compose
 
 ```bash
 cd docker/layotto-minio
@@ -15,25 +18,28 @@ cd docker/layotto-minio
 docker-compose up -d
 ```
 
-#### **本地编译（不适合 Windows)**
-您可以使用 Docker 运行 MinIO，然后本地编译、运行 Layotto。
+#### **Local compilation (not for Windows)**
 
-> [!TIP|label: 不适合 Windows 用户]
-> Layotto 在 Windows 下会编译失败。建议 Windows 用户使用 docker-compose 部署
-#### step 1.1. 启动 MinIO 服务
-您可以使用 Docker 启动本地MinIO服务, 参考[官方文档](https://min.io/docs/minio/container/index.html)
+You can use Docker to run MinIO, and then compile locally and run Layotto.
+
+> [!TIP|label: don't fit for Windows users]
+> Layotto will fail to compile under Windows.It is recommended that Windows users deploy using docker-compose
+
+#### step 1.1. Start MinIO service
+
+You can use Docker to launch local MinIO, reference[官方文档](https://min.io/docs/minio/container/index.html).
 
 ```shell
-docker run -d -p 9000:9000 -p 9090:9090 --name minio \
+docker run -d -p 9000:9000-p 90:9090 --name minio \
 -e "MINIO_ROOT_USER=layotto" \
--e "MINIO_ROOT_PASSWORD=layotto_secret" \
---restart=always \
-minio/minio server /data --console-address ':9090'
+-e "MINIO_ROOT_PASSORD=layotto_secretariat" \
+--restore=always \
+minio/minio server / data --console-address ':909'
 ```
 
-#### step 1.2. 启动layotto
+#### step 1.2. Start layotto
 
-layotto提供了minio的配置文件[oss配置](https://github.com/mosn/layotto/blob/main/configs/config_file.json) ，如下所示
+layotto offers minio's configuration file[oss配置](https://github.com/mosn/layotto/blob/main/configs/config_file.json), as shown below
 
 ```json
                       "file": {
@@ -51,31 +57,32 @@ layotto提供了minio的配置文件[oss配置](https://github.com/mosn/layotto/
                       }
 ```
 
-默认配置会连接`play.min.io`, 如果您自己部署了 Minio, 可以按需修改其中的配置。
+The default configuration will be linked to `play.min.io`. If you deploy Minio, you can modify the configuration as necessary.
 
-配置好后，切换目录:
+When configured, toggle directory:
 
 ```shell
 #备注 请将${project_path}替换成你的项目路径
 cd ${project_path}/cmd/layotto
 ```
 
-构建:
+Build:
 
 ```shell @if.not.exist layotto
 go build -o layotto
 ```
 
-启动 Layotto: 
+Start Layotto:
 
 ```shell @background
 ./layotto start --config ../../configs/config_file.json
 ```
+
 <!-- tabs:end -->
 
-### step 2. 启动测试demo
+### step 2. Start testing demo
 
-Layotto提供了访问文件的示例 [demo](https://github.com/mosn/layotto/blob/main/demo/file/client.go)
+Layotto provides example [demo]for access files (https://github.com/mosn/layotto/blob/main/demo/file/client.go)
 
 ```shell
 cd ${project_path}/demo/file
@@ -95,27 +102,33 @@ go build client.go
 ./client del test/hello/layotto.txt
 ```
 
-### step 3. 销毁容器，释放资源
+### Step 3. Destruction of containers, release of resources
+
 <!-- tabs:start -->
-#### **关闭 Docker Compose**
-如果您是用 docker-compose 启动的 MinIO 和 Layotto，可以按以下方式关闭：
+
+#### **Close Docker Compose**
+
+If you started with docker-compose, MinIO and Layotto can be turned off： as follows.
 
 ```bash
 cd ${project_path}/docker/layotto-minio
 docker-compose stop
 ```
 
-#### **销毁 MinIO Docker 容器**
-如果您是用 Docker 启动的 MinIO，可以按以下方式销毁 MinIO 容器：
+#### **Destroy the MinIO Docker container**
+
+If you are MinIO, started with Docker, you can destroy the MinIO container：
 
 ```shell
 docker rm -f minio
 ```
+
 <!-- tabs:end -->
 
-#### 细节以后再说，继续体验其他API
-通过左侧的导航栏，继续体验别的API吧！
+#### Continue to experience other APIs later
 
-#### 了解File API的实现原理
+Continue to experience other APIs with the navigation bar on the left!
 
-如果您对实现原理感兴趣，或者想扩展一些功能，可以阅读[File API的设计文档](docs/design/file/file-design.md)
+#### Learn how to implement File API
+
+If you are interested in implementing the rationale or want to expand some features, you can read the [File API design document](en/design/file/file-design.md)

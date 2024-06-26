@@ -1,12 +1,12 @@
-# Layotto 支持UDS通信
+# Layotto Support ODS Communications
 
-## 快速开始
+## Quick Start
 
-Layotto提供了基于UDS通信的能力，相对于TCP方式来说，UDS方式具有更好的性能。
+Layotto provides the ability to communicate on ODS and has a better performance than the TCP.
 
-### step 1.  启动layotto
+### step 1. Start layotto
 
-layotto提供了支持UDS通信的配置文件`configs/config_uds.json`，配置文件内容如下所示:
+layotto provides the configuration file `configs/config_uds.json` to support UDS communications. The configuration file reads as follows:
 
 ```json
 {
@@ -52,34 +52,36 @@ layotto提供了支持UDS通信的配置文件`configs/config_uds.json`，配置
 }
 ```
 
-与TCP配置相比主要有两个不同，network的类型从tcp变为unix，address从ip地址变为unix套接字文件。
+There are two main differences compared to the TCP configuration, the type of network changed from tcp to unix, addresses from IP to unix socket file.
 
-配置好后，切换目录:
+When configured, toggle directory:
 
 ```shell
 #备注 请将${project_path}替换成你的项目路径
 cd ${project_path}/cmd/layotto
 ```
 
-构建:
+Build:
 
 ```shell @if.not.exist layotto
 go build -o layotto
 ```
 
-启动 Layotto:
+Start Layotto:
 
 ```shell @background
 ./layotto start -c ../../configs/config_uds.json
 ```
 
-### step 2. 启动测试demo
+### step 2. Start testing demo
+
 <!-- tabs:start -->
+
 #### **Go**
 
-构建、运行 go 语言 demo:
+Build and run go language demo:
 
-Layotto提供了通过UDS调用gRPC接口的示例 [demo](https://github.com/mosn/layotto/blob/main/demo/uds/client.go)
+Layotto provides examples [demo]to call gRPC interfaces via ODS (https://github.com/mosn/layotto/blob/main/demo/uds/client.go)
 
 ```shell
 cd ${project_path}/demo/uds/
@@ -91,38 +93,37 @@ go build client.go
 
 #### **Java**
 
-构建、运行 java 语言 demo:
+Build, run java language demo:
 
-Layotto java-sdk已经支持通过UDS调用gRPC接口
+Layotto java-sdk has supported calling gRPC via ODS
 
 ```shell @if.not.exist java-sdk
 git clone https://github.com/layotto/java-sdk
 ```
 
-切换目录:
+Switch directory:
 
 ```shell
 cd java-sdk
 ```
 
-构建:
+Build:
 
 ```shell @if.not.exist examples-uds/target/examples-uds-jar-with-dependencies.jar
 # build example jar
 mvn -f examples-uds/pom.xml clean package
 ```
 
-运行:
+Run:
 
 ```
-java -jar examples-uds/target/examples-uds-jar-with-dependencies.jar
+java -jar examples-uds/target/examples-uds-in-with-dependencies.jar
 ```
 
-打印出以下信息说明运行成功:
+The following information was printed and run successfully:
 
 ```bash
-greeting, helloworld
+greeting, helloowold
 ```
 
 <!-- tabs:end -->
-

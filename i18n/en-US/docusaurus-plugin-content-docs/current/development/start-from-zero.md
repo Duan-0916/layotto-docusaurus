@@ -1,47 +1,51 @@
-# 新手攻略：从零开始成为 Layotto 贡献者
-本文作为新手攻略，为想参与本开源项目、但是不清楚从哪下手的同学讲解下升级打怪路线。
+# Newhanded offensive：became a Layotto contributor from zero
 
-## Step 1. Hello world,了解 Layotto 是干嘛的
-先了解项目是干啥的，参照quickstart demo把hello world跑起来，比如：
-   - [使用Configuration API](https://mosn.io/layotto/#/zh/start/configuration/start-apollo) 
-   - [使用State API进行状态管理](https://mosn.io/layotto/#/zh/start/state/start) 
-   - [使用分布式锁 API](https://mosn.io/layotto/#/zh/start/lock/start) 
+This paper is a new hand-walker for the purpose of attempting to participate in this open source project, but it is not clear from what classmates know about which to upgrade.
 
-Tips: 如果过程中遇到了报错没法启动，可以在github发issue提问。
+## Step 1. Hello world, understand Layotto is dry
 
-Tips: 如果觉得某篇文档写的不够详细想要补充，或者文档写错了，可以提PR修复。这可能是成为contributor的最快路线 :)
+Learn what the project was. Use quickstart to run hello around the world by reference to quickstart demo like：
 
-（可选）扩展阅读：有一些介绍项目的演讲视频，比如[《MOSN 子项目 Layotto：开启服务网格+应用运行时新篇章》](https://mosn.io/layotto/#/zh/blog/mosn-subproject-layotto-opening-a-new-chapter-in-service-grid-application-runtime/index) ， 
-比如 [《Service Mesh落地之后：为 sidecar 注入灵魂》](https://www.bilibili.com/video/BV1RL4y1b7U9?from=search&seid=1492521025214444985&spm_id_from=333.337.0.0)
-。不过看视频比较花时间，懒得看的话可以多跑几个demo体验下，quickstart demo蛮多的
+- [Use configuration API](https://mosn.io/layotto/#/en/start/configuration/start-apollo)
+- [State API for status management](https://mosn.io/layotto/#/start/state/start)
+- [Use distributed lock API](https://mosn.io/layotto/#/start/lock/start)
 
-## Step 2. 挑选适合你的任务
-当你大概知道这个项目是做什么的了，可以从 [good first issue 列表](https://github.com/mosn/layotto/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%22good+first+issue%22) 中挑选感兴趣的任务，没打勾的任务都可以认领。完成任务即可成为Layotto Contributor。
-选择任务时，推荐：
-   
-- 对于想要学习go语言的同学 
+Tips: Ask issues in github, if a bug is started during the process.
 
-可以先选择"给指定模块添加注释"的任务，读代码的同时加注释，顺便学习go写法；
+Tips: If you feel that a document is not written in sufficient detail to add it, or the document is written incorrectly, you can make a PR.This is probably the fastest route to contribor :)
 
-或者选择加单测的任务，加单测的过程可以练习写go；
+（可选）扩展阅读：有一些介绍项目的演讲视频，比如[《MOSN 子项目 Layotto：开启服务网格+应用运行时新篇章》](https://mosn.io/layotto/#/zh/blog/mosn-subproject-layotto-opening-a-new-chapter-in-service-grid-application-runtime/index) ，
+比如 [《Service Mesh落地之后：为 sidecar 注入灵魂》](https://www.bilibili.com/video/BV1RL4y1b7U9?from=search\&seid=1492521025214444985\&spm_id_from=333.337.0.0)
+。But looking at videos takes time, lazy to run more than a few demo experiments, quickstart more brutally
 
-同时，Easy级别会有一些写代码的任务，写起来并不难但是对项目很有帮助，感兴趣可以直接上手写代码，比如 https://github.com/mosn/layotto/issues/275#issuecomment-957711746 比如 [开发 in-memory 组件](https://github.com/mosn/layotto/issues/67#issuecomment-975134341) 具体可以留意任务列表中的Easy任务
+## Step 2. Select your task
 
-- 对于想要写其他语言的同学（java,c++,python,typescript等）
+当你大概知道这个项目是做什么的了，可以从 [good first issue 列表](https://github.com/mosn/layotto/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%22good+first+issue%22) 中挑选感兴趣的任务，没打勾的任务都可以认领。Complete task to become Layotto Contribor.
+Recommended： when selecting a task
 
-虽然Layotto是 go语言开发的项目，但是需要开发各种语言的sdk，而开发sdk是不需要懂go语言的。
-比如熟悉java的同学可以认领java sdk相关的任务，并不需要懂go。
+- Recourse to the language you want to learn
 
-因此可以留意任务列表中和sdk相关的任务。
+You can first select the task "Add a comment to the specified module", read the code with annotations, and learn the towriting method.
 
+Or select a single task with a single metering process that can be used to write go;
 
-- 对于有一定后端基础、go语言基础的同学
+At the same time, the Easy level will have some code writing tasks that are not difficult to write but are very helpful to the project. Interest can be taken directly to the handwritten code, such as https://github.com/mosn/layotto/issues/275#issuomment-957711746 like [Developing in-memory components] (https://github.com/mosn/layotto/issues/67#issuomment_975134341)
 
-有基础的话，按兴趣选择任务即可，比如对分布式锁感兴趣，比如对Webassembly感兴趣，可以选择跟这些技术相关的任务。
+- For students who want to write other languages (java, c++, python, typescript, etc.)
+
+Although Layotto is a project for development of the language of go, there is a need to develop sdk in various languages, which does not need to understand the language of go.
+For example, students familiar with java can claim java sdk and do not need to know go.
+
+It is therefore possible to look at tasks in the task list related to sdk.
+
+- Recourse to some back-end base, go-language base
+
+If available, select tasks by interest, such as interested in distributive locks, such as Webassembly, and select tasks related to these technologies.
 
 ## Step 3. 认领任务之后……沟通很重要！
-认领任务后，如果是有一定开发成本的任务，最好先在issue下面描述下自己的设计方案，避免返工。
 
-开发过程中难免遇到困难，比如有报错、一直修不好，这都很正常，因此懂得向他人求助、求助的时候描述清楚自己的问题也是很重要的。
+When it is assumed that there is a certain development cost, it is best to describe its own design programme below the issue and avoid returning to work.
 
-遇到问题可以在issue区或者钉钉群里讨论，可以描述下自己遇到的异常现象（比如报错信息）、复现步骤，以便大家帮忙排查。
+The difficulties encountered in the development process, such as misreporting and continuing misconduct, were normal, and it was therefore important to know when asking and asking for help from others to describe their own problems.
+
+Problems can be discussed in an issue area or pegged group, which can describe the anomalies that they encounter (e.g. misinformation for misinformation) and the steps taken to replicate them so that they can be easily checked.

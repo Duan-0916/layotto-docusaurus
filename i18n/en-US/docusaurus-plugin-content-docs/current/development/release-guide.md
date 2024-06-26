@@ -1,59 +1,62 @@
-# 发布手册
-本文介绍下发布新版本时，发布负责人需要做什么
+# Publish Handbook
 
-## 发布周期
-Layotto 发布周期暂定为每季度发布一次。
+What should be done by publishing a new version under this section
 
-## 发布 checklist
+## Publish Period
 
-### Step1: 检查当前迭代的 [Roadmap](https://github.com/mosn/layotto/projects) 
-    
-1. 检查进行中的任务
-2. 检查未完成的任务
-3. 与负责人确认任务状态和发布内容
+The Layotto publication cycle is tentatively scheduled to be issued on a quarterly basis.
 
-### Step2: 创建发布 tag， push 至 github 并检查工作流
+## Publish checklist
+
+### Step1: Check [Roadmap]for current iterations (https://github.com/mosn/layotto/projects)
+
+1. Check ongoing tasks
+2. Check unfinished tasks
+3. Confirm Task Status and Publish Content with Owner
+
+### Step2: Create Release tag, push to github, and check workflow
 
 1. 规范：请按照 `v{majorVersion}.{subVersion}.{latestVersion}` 格式创建 tag。
-   
-2. 等待 CI 结束，确认以下内容：
-    + CI 测试 Jobs 全部通过：
-        + Go 代码风格校验
-        + Go 代码规范校验
-        + Go 单元测试
-        + Go 集成测试
-    + CI 多平台 Artifacts 构建 Jobs 全部通过：
-        + Linux/AMD64 Artifacts 成功 Build 并 Upload
-        + Linux/ARM64 Artifacts 成功 Build 并 Upload
-        + Darwin/AMD64 Artifacts 成功 Build 并 Upload
-        + Darwin/ARM64 Artifacts 成功 Build 并 Upload
-    + CI 多平台 Image 构建/发布 Jobs 全部通过：
-        + Linux/AMD64 Image 成功 Build 并 Push DockerHub
-        + Linux/ARM64 Image 成功 Build 并 Push DockerHub
-            + Image Tag 规范：
-                + AMD64/X86 架构的镜像：`layotto/layotto:{tag}`
-                + ARM64 架构的镜像：`layotto/layotto.arm64:{tag}`
 
-![release.png]((/img/development/workflow/release.png)
+2. Waiting for CI to end, confirm the following：
+   - CI Test Jobs through：
+     - Go code style verification
+     - Go code specification validation
+     - Go Unit Test
+     - Go Integration Test
+   - CI Multiplatform Artifacts build Jobs through：
+     - Linux/AMD64 Artifacts successfully built and uploaded
+     - Linux/ARM64 Artifacts successfully built and uploaded
+     - Darwin/AMD64 Artifacts successfully built and uploaded
+     - Darwin/ARM64 Artifacts successfully built and uploaded
+   - CI Multiplatform Image build/publish Jobs through：
+     - Linux/AMD64 Image successfully built and Push DockerHub
+     - Linux/ARM64 Image successfully built and Push DockerHub
+       - Image Tag specification：
+         - AMD64/X86 架构的镜像：`layotto/layotto:{tag}`
+         - ARM64 架构的镜像：`layotto/layotto.arm64:{tag}`
 
-### Step3: Draft a new release 并编写发布报告
+![release.png](/img/development/workflow/release.png)
 
-> 发布报告可以先用 github 的功能自动生成，再基于生成的内容做修改。
+### Step3: Draft a new release and prepare a release report
 
-> 可以参考以前的 [发版报告](https://github.com/mosn/layotto/releases)
+> Publish reports can be automatically generated using the github's functionality before making changes based on the generated content.
 
-![img_1.png]((/img/development/release/img_1.png) 
+> Reference can be made to previous [发版报告](https://github.com/mosn/layotto/releases)
 
-### Step4: 上传多平台架构的 Binaries
-> 2022/05/04更新：这一步可以忽略。打 tag 发布后，Layotto 的 Release Pipeline 会自动上传二进制文件，无需手动上传。PR 见 https://github.com/mosn/layotto/pull/566
+![img\_1.png](/img/development/release/img_1.png)
 
-> 如果没有自动上传，可以手动将 `步骤 2` 中构建的多平台 Artifacts 下载、上传
+### Step4: Upload Binars of Multi-Platform Architecture
 
-![img.png]((/img/development/release/img.png)
+> Update：by 2022/05/04 is negligible.Release Pipeline from Layotto will automatically upload binary files without having to upload manually.PR See https://github.com/mosn/layotto/pull/566
 
-### Step5: 确认发布
+> If you do not upload automatically, you can manually download and upload the multi-platform Artifacts built in `Step 2`
 
-1. 点击发布
-2. 社区周知
-3. 检查 [Roadmap](https://github.com/mosn/layotto/projects)，修改上个版本未完成的任务，把 milestone 改为下个版本
-4. 如果有 SDK 发布，需在 SDK 仓库做发布，并上传中央仓库 (比如 Java SDK 需要上传到 Maven 中央仓库)。
+![img.png](/img/development/release/img.png)
+
+### Step5: Confirm Publish
+
+1. Click to publish
+2. General information
+3. Check [Roadmap](https://github.com/mosn/layotto/projects), modify unfinished tasks in previous version, change milestone to next version
+4. If there is a SDK release, it needs to be published in the SDK repository and upload the central repository (e.g. Java SDK needs to be uploaded to Maven central repository).
