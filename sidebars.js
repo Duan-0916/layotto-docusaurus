@@ -1,13 +1,4 @@
-/**
- * Creating a sidebar enables you to:
- - create an ordered group of docs
- - render a sidebar for each doc of that group
- - provide next/previous navigation
 
- The sidebars can be generated from the filesystem, or explicitly defined here.
-
- Create as many sidebars as you want.
- */
 
 const sidebars = {
 
@@ -147,7 +138,6 @@ const sidebars = {
             },
             {
               type: 'doc',
-              label: '健康检查、查询运行时元数据',
               id: 'start/actuator/start',
             },
             {
@@ -435,57 +425,46 @@ const sidebars = {
       items: [
         {
           type: 'doc',
-          label: '动态配置下发、组件热重载',
           id: 'design/lifecycle/apply_configuration',
         },
         {
           type: 'doc',
-          label: 'Actuator设计文档',
           id: 'design/actuator/actuator-design-doc',
         },
         {
           type: 'doc',
-          label: 'gRPC框架设计文档',
           id: 'design/actuator/grpc-design-doc',
         },
         {
           type: 'doc',
-          label: 'Configuration API with Apollo',
           id: 'design/configuration/configuration-api-with-apollo',
         },
         {
           type: 'doc',
-          label: 'Pub/Sub API以及与dapr component的兼容性',
           id: 'design/pubsub/pubsub-api-and-compability-with-dapr-component',
         },
         {
           type: 'doc',
-          label: 'RPC设计文档',
           id: 'design/rpc/rpc_design_document',
         },
         {
           type: 'doc',
-          label: '分布式锁API设计文档',
           id: 'design/lock/lock-api-design',
         },
         {
           type: 'doc',
-          label: 'Sequencer API设计文档',
           id: 'design/sequencer/design',
         },
         {
           type: 'doc',
-          label: 'File API设计文档',
           id: 'design/file/file-design',
         },
         {
           type: 'doc',
-          label: 'FaaS 设计文档',
           id: 'design/faas/faas-poc-design',
         },
         {
           type: 'doc',
-          label: 'API插件',
           id: 'design/api_plugin/design',
         },
         {
@@ -495,12 +474,10 @@ const sidebars = {
         },
         {
           type: 'doc',
-          label: 'OSS API设计文档',
           id: 'design/oss/design',
         },
         {
           type: 'doc',
-          label: 'pluggable component 设计文档',
           id: 'design/pluggable/design',
         },
       ],
@@ -569,12 +546,8 @@ const sidebars = {
 
     {
       type: "doc",
-      label: "视频合集",
       id: "video/README"
     }
-
-
-
   ]
 };
 

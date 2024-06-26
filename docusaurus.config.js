@@ -31,7 +31,12 @@ const config = {
   // may want to replace "en" with "en".
   i18n: {
     defaultLocale: 'zh-Hans',
-    locales: ['en','zh-Hans'],
+    locales: ['en-US','zh-Hans'],
+    localeConfigs: {
+      "en-US": {
+        label:"English"
+      }
+    }
   },
 
   presets: [
@@ -49,13 +54,13 @@ const config = {
             //把docPath 拆分，中间加上对应的路径。
             let newDocPath;
 
-            if (locale != 'en') {
+            if (locale !== 'en-US') {
               const pathSegments = docPath.split('/');
-              newDocPath = ['docs', 'zh', ...pathSegments].join('/');
+              newDocPath = ['docs', ...pathSegments].join('/');
               return `https://github.com/mosn/layotto/edit/main/`+newDocPath;
             }else{
               const pathSegments = docPath.split('/');
-              newDocPath = ['docs', 'en', ...pathSegments].join('/');
+              newDocPath = ['i18n/en-US/docusaurus-plugin-content-docs/current', ...pathSegments].join('/');
               return `https://github.com/mosn/layotto/edit/main/`+newDocPath;
             }
 
@@ -67,8 +72,27 @@ const config = {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl: "http://github.com/layotto/mosn"
+          // editUrl: ({ locale, blogDirPath, blogPath }) => {
+          //   if (locale !== 'en-US') {
+          //     return `https://crowdin.com/project/verdaccio/${locale}`;
+          //   }
+          //   return `https://github.com/verdaccio/verdaccio/edit/master/website/${blogDirPath}/${blogPath}`;
+          // },
+          editUrl:({  locale,blogDirPath, blogPath }) => {
+            //把docPath 拆分，中间加上对应的路径。
+            let newDocPath;
+            if (locale !== 'en-US') {
+              // const pathSegments = docPath.split('/');
+              // newDocPath = ['blog', ...pathSegments].join('/');
+              return `https://github.com/mosn/layotto/edit/main//${blogDirPath}/${blogPath}`;
+            }else{
+              // const pathSegments = docPath.split('/');
+              // newDocPath = ['i18n/en-US/docusaurus-plugin-content-blog', ...pathSegments].join('/');
+              return `https://github.com/mosn/layotto/edit/main//${blogDirPath}/${blogPath}`;
+            }
+
+          }
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -115,20 +139,7 @@ const config = {
           },
         ],
       },
-      locales: [
-        {
-          code: 'en',
-          label: 'English',
-          direction: 'ltr',
-          navbarTitle: '',
-        },
-        {
-          code: 'zh-Hans',
-          label: '简体中文',
-          direction: 'ltr',
-        },
 
-      ],
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
