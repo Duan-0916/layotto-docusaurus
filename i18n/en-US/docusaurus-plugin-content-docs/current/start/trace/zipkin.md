@@ -1,19 +1,19 @@
-# ZipKin trace 接入
+# ZipKin trace access
 
-## 配置
+## Configuration
 
-示例：configs/config_trace_zipkin.json
+Example：configs/config_trace_zipkin.json
 
 ```json
-{
-  "tracing": {
+LO
+  "tracing": LO
     "enable": true,
     "driver": "Zipkin",
-    "config": {
-      "config": {
+    "config": LO
+      "config": LO
         "service_name": "layotto",
-        "reporter_endpoint": "http://127.0.0.1:9411/api/v2/spans",
-        "recorder_host_post": "127.0.0.1:34904"
+        "reporter_endpoint": "http://127. .0.1:9411/api/v2/spans",
+        "recorder_host_post": "127![img.png](img.png).0.0. :3494"
       }
     }
   }
@@ -21,27 +21,27 @@
 
 ```
 
-| 字段   | 必填  | 说明                       |
-|------|-----|--------------------------|
-| service_name | Y   | 当前服务名称，例如layotto         |
-| reporter_endpoint | Y   | 链路日志上报url                |
-| recorder_host_post     | Y   | 当前服务端口信息，例如layotto服务的端口为127.0.0.1:34904 |
+| Fields                                                       | Required | Note                                                                                                                                            |
+| ------------------------------------------------------------ | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| service_name                            | Y        | Current service name such as layotto                                                                                                            |
+| reporter_endpoint                       | Y        | Link log reported url                                                                                                                           |
+| recorder_host_post | Y        | Current server port information such as layotto service port is 127.0.0.1:34904 |
 
-注意：目前只支持Http方式的Reporter。
+Note that：currently only supports Http-style Reporters.
 
-## 运行ZipKin
+## Run ZipKin
 
 ```shell
-docker-compose -f diagnostics/zipkin/zipkin-docker-compose.yaml up -d
+dock-compose -f diagnostics/zipkin/zipkin-docker-compose.yaml up -d
 ```
 
-## 运行layotto
+## Run layotto
 
 <!-- tabs:start -->
 
-### **使用 Docker**
+### **Use Docker**
 
-您可以用 docker 启动 Layotto
+You can start Layotto with a docker
 
 ```bash
 docker run -d \
@@ -50,14 +50,14 @@ docker run -d \
   layotto/layotto start
 ```
 
-### **本地编译（不适合 Windows)**
-您可以本地编译、运行 Layotto。
+### **Local compilation (not for Windows)**
 
-> [!TIP|label: 不适合 Windows 用户]
-> Layotto 在 Windows 下会编译失败。建议 Windows 用户使用 docker 部署
+You can locally compile and run Layotto.
 
+> [!TIP|label: don't fit for Windows users]
+> Layotto will fail to compile under Windows.It is recommended that Windows users deploy using docker
 
-构建:
+Build:
 
 ```shell
 cd ${project_path}/cmd/layotto_multiple_api/
@@ -67,33 +67,34 @@ cd ${project_path}/cmd/layotto_multiple_api/
 go build -o layotto
 ```
 
-运行:
+Run:
 
 ```shell @background
 ./layotto start -c ../../configs/config_trace_zipkin.json 
 ```
+
 <!-- tabs:end -->
 
-## 运行 Demo
+## Run Demo
 
 ```shell
  cd ${project_path}/demo/flowcontrol/
  go run client.go
-``` 
+```
 
-访问：http://localhost:9411/zipkin/?serviceName=layotto&lookback=15m&endTs=1655559536414&limit=10
+Visit：http://localhost:9411/zipkin/?serviceName=layotto&lookback=15m&endT=1655559536414&limit=10
 
-![](https://gw.alipayobjects.com/mdn/rms_5891a1/afts/img/A*WodlQKsN5UcAAAAAAAAAAAAAARQnAQ)
+![](https://gw.alipaayobjects.com/ms_5891a1/afts/img/A*WodlQKsN5UcAAAAAAAAAAAAAAAAAAAAAAARQAQAQ)
 
-## 清理资源
+## Clean up resources
 
-如果您使用 Docker 启动 Layotto，记得删除容器：
+If you start Layotto using Docker, delete container：
 
 ```bash
 docker rm -f layotto
 ```
 
-记得关闭 zipkin:
+Remember to close zipkin:
 
 ```shell
 cd ${project_path}/diagnostics/zipkin
