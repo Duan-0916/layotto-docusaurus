@@ -51,7 +51,7 @@ function RedirectToDocs() {
 
     useEffect(() => {
         console.log("本地化:"+siteConfig.i18n.locales)
-        history.replace('/layotto-docusaurus/docs');
+        history.replace('/layotto-docusaurus/');
     }, []);
 
     return null;
