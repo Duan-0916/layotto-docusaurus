@@ -83,11 +83,11 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        // title: '',
-        // logo: {
-        //   alt: 'Layotto Logo',
-        //   src: 'https://gw.alipayobjects.com/zos/bmw-prod/65518bfc-8ba5-4234-a5c5-2bc065e3a5f0.svg',
-        // },
+        title: '',
+        logo: {
+          alt: 'Layotto Logo',
+          src: 'https://gw.alipayobjects.com/zos/bmw-prod/65518bfc-8ba5-4234-a5c5-2bc065e3a5f0.svg',
+        },
         items: [
           {
             type: 'doc',
