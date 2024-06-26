@@ -2,7 +2,9 @@
   "index_name": "layotto",
   "start_urls": [
     "https://15669072513.github.io/layotto-docusaurus/docs",
-    "https://15669072513.github.io/layotto-docusaurus/en/docs"
+    "https://15669072513.github.io/layotto-docusaurus/blog",
+    "https://15669072513.github.io/layotto-docusaurus/en-US/docs",
+    "https://15669072513.github.io/layotto-docusaurus/en-US/blog"
   ],
   "stop_urls": [
     "/tests"

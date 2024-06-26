@@ -1,11 +1,10 @@
-// import clsx from 'clsx';
-// import Link from '@docusaurus/Link';
-// import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-// import Layout from '@theme/Layout';
-// import HomepageFeatures from '@site/src/components/HomepageFeatures';
-//
-// import Heading from '@theme/Heading';
-// import styles from './index.module.css';
+import clsx from 'clsx';
+import Link from '@docusaurus/Link';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import Layout from '@theme/Layout';
+import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import Heading from '@theme/Heading';
+import styles from './index.module.css';
 //
 // function HomepageHeader() {
 //   const {siteConfig} = useDocusaurusContext();
@@ -48,8 +47,10 @@ import { useHistory } from 'react-router-dom';
 
 function RedirectToDocs() {
     const history = useHistory();
+    const {siteConfig} = useDocusaurusContext();
 
     useEffect(() => {
+        console.log("本地化:"+siteConfig.i18n.locales)
         history.replace('/layotto-docusaurus/docs');
     }, []);
 
