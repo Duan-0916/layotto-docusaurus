@@ -25,7 +25,7 @@ Reference to <br />[https://mosn.io/docs/concept/extensions/](https://mosn.io/do
 
 Mosn Stream Filter Extension
 
-![01.png](https://gw.alipaayobjects.com/md/rms_5891a1/afts/img/A*tSn4SpIkAa4AAAAAAAAAAAAAAAAAAAARQAQAQ)
+![01.png](https://gw.alipayobjects.com/mdn/rms_5891a1/afts/img/A*tSn4SpIkAa4AAAAAAAAAAAAAARQnAQ)
 
 ### Code in： [flowcontrol代码](https://github.com/mosn/mosn/tree/master/pkg/filter/stream/flowcontrol)
 
@@ -57,7 +57,7 @@ Limit the streaming to the restricted stream chain structure to take effect in s
 
 CreateFilterChain method adds multiple filters to the link structure
 
-![07.png](https://gw.alipaayobjects.com/mdn/rms_5891a1/afts/img/A*a8ClQ76odpEAAAAAAAAAAAAAAAAAAAARQNAQNAQAQAQ)
+![07.png](https://gw.alipayobjects.com/mdn/rms_5891a1/afts/img/A*a8ClQ76odpEAAAAAAAAAAAAAARQnAQ)
 
 We can see that this interface is achieved by a wide variety of plant types, including those that we are studying today.
 

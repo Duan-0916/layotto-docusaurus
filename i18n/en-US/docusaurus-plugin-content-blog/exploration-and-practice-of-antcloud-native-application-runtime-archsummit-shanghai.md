@@ -2,11 +2,12 @@
 
 > The introduction of the Mesh model is a key path to the application of clouds and ant groups have achieved mass landings internally.The sinking of more middleware capabilities, such as Message, DB, Cache Mesh and others, will be the future shape of intermediate technology when the app evolves from Mesh.Apps run to help developers construct cloud native apps quickly and to further decouple apps and infrastructure, while the app runs at the core of API standards, the community is expected to build together.
 
-> ![](https://gw.alipaayobjects.com/mn/rms_1c90e8/afts/img/A*nergRo8-RI0AAAAAAAAAAAAAAAAAAAAAARQAQAQ)
+> ![](https://gw.alipayobjects.com/mdn/rms_1c90e8/afts/img/A*nergRo8-RI0AAAAAAAAAAAAAARQnAQ)
 
 ## Ant Group Mesh Introduction
 
-Ant Financial is a technology and innovation-driven company. From the earliest payment application on Taobao to the current large-scale company serving globally over 1.2 billion users, the evolution of Ant's technological architecture can be roughly divided into the following stages:
+Ant is a technology and innovation-driven company, from its earliest days as a payment app on Taobao to its current services
+As a large company with 1.2 billion users worldwide, Ant's technical architecture evolution will probably be divided into the following stages:
 
 Prior to 2006, the earliest payment was a centralized monolithic application with modular development of different businesses.
 
@@ -92,7 +93,7 @@ Beginning last March, following several rounds of internal discussions and resea
 
 > ![](https://gw.alipaayobjects.com/ms_1c90e8/afts/img/A*iqQoTYAMA4YAAAAAAAAAAAAAAAAAAARQAQAQ)
 
-云原生应用运行时设计里核心的几个点如下：
+The core points of runtime design for cloud-native applications are as follows:
 
 \*\*First \*\*, due to experience of MOSN sizing and associated shipping systems, we decided to build up our cloud native app on the basis of MOSN kernel.
 
@@ -182,8 +183,8 @@ Extend Reading
 
 - [Take you into Cloud Native Technology：Native Open Delivery Systems Exploration and Practices](https://mp.weixin.qq.com/s?_biz=MzUzU5Mjc1Nw===\&mid=2247488044\&idx=1\&sn=e6300d4b451723a5001cd3deb17fbc\&chksm=faa0f6cdd774e03ccd91300996747a8e7e109ecf810af147e08c663676946490\&scene=21)
 
-- [积跬步至千里：QUIC 协议在蚂蚁集团落地之综述](https://mp.weixin.qq.com/s?__biz=MzUzMzU5Mjc1Nw==\&mid=2247487717\&idx=1\&sn=ca9452cdc10989f61afbac2f012ed712\&chksm=faa0ff3fcdd77629d8e5c8f6c42af3b4ea227ee3da3d5cdf297b970f51d18b8b1580aac786c3\&scene=21)
+- [Taking a thousand miles one step at a time: A comprehensive overview of the QUIC protocol landing at Ant Group](https://mp.weixin.qq.com/s?__biz=MzUzMzU5Mjc1Nw==\&mid=2247487717\&idx=1\&sn=ca9452cdc10989f61afbac2f012ed712\&chksm=faa0ff3fcdd77629d8e5c8f6c42af3b4ea227ee3da3d5cdf297b970f51d18b8b1580aac786c3\&scene=21)
 
-- [Rust 大展拳脚的新兴领域：机密计算](https://mp.weixin.qq.com/s?__biz=MzUzMzU5Mjc1Nw==\&mid=2247487576\&idx=1\&sn=0d0575395476db930dab4e0f75e863e5\&chksm=faa0ff82cdd77694a6fc42e47d6f20c20310b26cedc13f104f979acd1f02eb5a37ea9cdc8ea5\&scene=21)
+- [Rust's emerging field showing its prowess: confidential computing](https://mp.weixin.qq.com/s?__biz=MzUzMzU5Mjc1Nw==\&mid=2247487576\&idx=1\&sn=0d0575395476db930dab4e0f75e863e5\&chksm=faa0ff82cdd77694a6fc42e47d6f20c20310b26cedc13f104f979acd1f02eb5a37ea9cdc8ea5\&scene=21)
 
 - [Protocol Extension Base on Wasm — protocol extension](https://mp.weixin.qq.com/s?_biz=MzUzU5Mjc1Nw===\&mid=2247487546\&idx=1\&sn=72c3f1e27ca4ace788e11ca20d5f9\&chksm=faa0ffe0cd776f6d17323466b500acee50a371663f18da34d8e4d72304d7681cf589b45\&scene=21)
