@@ -72,7 +72,7 @@ A part of the application of the new：ant in business compatible with different
 
 The earliest scenes from Service Mesh to Multi-Mesh：ant are Service Mesh, MOSN intercept traffic through network connecting agents, and other intermediates interact with the server through the original SDK.Now MOSN is more than a Service Mosh, but multi-Mesh, because, with the exception of RPC, we have supported more mesh Mesh landing sites, including messages, configurations, caches, etc.Each sinking intermediate can be seen, and almost all have a lightweight SDK on the side of the app, which, in the context of the first issue just a moment ago, finds a very large amount of lightweight SDK that needs to be maintained.In order to keep the features do not interact with each other, each feature opens different ports, calls with MOSN via different protocol.e.g. RPC protocol for RPC, MQ protocol for messages, cached Redis protocol.Then the current MOSN is more than just a flow orientation. For example, the configuration is to expose the API to use business code.
 
->![](https://gw.alipayobjects.com/mdn/rms_1c90e8/afts/img/A*Sq7oR6eO2QAAAAAAAAAAAAAAARQnAQ)
+>![](https://gw.alipayobjects.com/mdn/rms_1c90e8/afts/img/A*80o8SYwyHJoAAAAAAAAAAAAAARQnAQ)
  
 To solve the problems and scenes we are thinking about the following points：
 
@@ -84,13 +84,13 @@ Can interoperability protocols be unified?
 
 Can the implementation of the bottom be replaced?
 
->![](https://gw.alipayobjects.com/mdn/rms_1c90e8/afts/img/A*eAlMT7SMTpMAAAAAAAAAAAAAARQnAQ)
+>![](https://gw.alipayobjects.com/mdn/rms_1c90e8/afts/img/A*J76nQoLLYWgAAAAAAAAAAAAAARQnAQ)
 
 ## Ant Cloud Native Apps Runtime Structure
 
 Beginning last March, following several rounds of internal discussions and research into new ideas in industry, we introduced a concept of “cloud native apps” (hereinafter referred to as running on).By definition, we want this operation to include all distributive capabilities that the app cares for, help developers build your cloud native apps quickly, help apps and infrastructure to decouple more!
 
->![](https://gw.alipayobjects.com/mdn/rms_1c90e8/afts/img/A*80o8SYwyHJoAAAAAAAAAAAAAARQnAQ)
+>![](https://gw.alipayobjects.com/mdn/rms_1c90e8/afts/img/A*iqQoTYAma4YAAAAAAAAAAAAAARQnAQ)
 
 The core points of runtime design for cloud-native applications are as follows:
 
