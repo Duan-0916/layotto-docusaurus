@@ -104,7 +104,7 @@ The core points of runtime design for cloud-native applications are as follows:
 
 **Running abstract capabilities**
 
->![](https://gw.alipayobjects.com/mdn/rms_1c90e8/afts/img/A*hsZBQJg0VnoAAAAAAAAAAAAAARQnAQ)
+>![](https://gw.alipayobjects.com/mdn/rms_1c90e8/afts/img/A*hWIVR6ccduYAAAAAAAAAAAAAARQnAQ)
 
 To abstract some of the capabilities most needed for cloud apping, we set a few principles：
 
