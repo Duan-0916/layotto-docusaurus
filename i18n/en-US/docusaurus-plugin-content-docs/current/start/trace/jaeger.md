@@ -1,8 +1,8 @@
-# Jaeger trace 接入
+# Jaeger trace
 
-## 配置
+## Configuration
 
-示例：configs/config_trace_jaeger.json
+Example：configs/config_trace_jaeger.json
 
 ```json
 {
@@ -16,14 +16,14 @@
 }
 ```
 
-| 字段           | 必填 | 说明                                                   |
-|--------------|----|------------------------------------------------------|
-| service_name | Y  | 服务名称                                                 |
-| agent_host   | N  | agent组件端口                                            |
-| strategy     | N  | 数据上报方式，默认使用 collector 方式. 可选的配置值有`collector`和`agent` |
-|collector_endpoint | N  | collector的端口号，默认http://127.0.0.1:14268/api/traces    |
+| Fields                                  | Required | Note                                                                                                                                                  |
+| --------------------------------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| service_name       | Y        | Service Name                                                                                                                                          |
+| agent_host         | N        | agent component port                                                                                                                                  |
+| Strategy                                | N        | Data reporting, default using collector method. Optional configuration values include `collector` and `agent`                         |
+| collector_endpoint | N        | port number for collector, default http:///127.0.0.1:14268/api/traces |
 
-## 运行Jaeger
+## Run Jaeger
 
 ```shell
 cd ${project_path}/diagnostics/jaeger
@@ -31,56 +31,55 @@ cd ${project_path}/diagnostics/jaeger
 docker-compose -f jaeger-docker-compose.yaml up -d
 ```
 
-## 运行layotto
+## Run layotto
 
-可以按照如下方式启动一个layotto的server：
+A layoto's server： can be started as follows.
 
-切换目录:
+Switch directory:
 
 ```shell
 cd ${project_path}/cmd/layotto_multiple_api
 ```
 
-构建:
+Build:
 
 ```shell @if.not.exist layotto
 go build -o layotto
 ```
 
-运行:
+Run:
 
 ```shell @background
 ./layotto start -c ../../configs/config_trace_jaeger.json 
 ```
 
-## 运行 Demo
+## Run Demo
 
-对应的调用端代码在[client.go](https://github.com/mosn/layotto/blob/main/demo/flowcontrol/client.go) 中，运行它会调用layotto的SayHello接口：
+The corresponding call end code is in[client.go](https://github.com/mosn/layotto/bllob/main/demo/flowcontrol/client.go), which runs the Sayhello interface with layotto：
 
-切换目录:
+Switch directory:
 
 ```shell
  cd ${project_path}/demo/flowcontrol/
-``` 
-
-构建:
-
-```shell @if.not.exist client 
- go build -o client
 ```
 
-运行:
+Build:
+
+```shell @if.not.exist client 
+ go build -o customer
+```
+
+Run:
 
 ```shell
 ./client
 ```
 
-访问 http://localhost:16686
+Visit http://localhost:16686
 
-![img.png](https://gw.alipayobjects.com/mdn/rms_5891a1/afts/img/A*-f2LSLAR9YMAAAAAAAAAAAAAARQnAQ)
+![img.png](https://gw.alipaayobjects.com/mdn/rms_5891a1/afts/img/AA-f2LSLAR9YMAAAAAAAAAAAAAAAAAAAAAAAAAAARQAQAQ)
 
-
-## 清理资源
+## Clean up resources
 
 ```shell
 cd ${project_path}/diagnostics/jaeger

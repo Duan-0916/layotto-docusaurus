@@ -20,11 +20,11 @@
     "description": "Navbar item with label GitHub"
   },
   "item.label.文档": {
-    "message": "Doc",
+    "message": "Docs",
     "description": "Navbar item with label 文档"
   },
   "item.label.博客": {
-    "message": "Blob",
+    "message": "Blog",
     "description": "Navbar item with label 博客"
   }
 }

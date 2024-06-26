@@ -1,42 +1,45 @@
-# 自定义组件
-## 什么是自定义组件?
+# Custom Component
 
-Layotto 中的组件分为两种：
-- 预置组件
+## What is a custom component?
 
-比如 `PubSub` 组件，比如 `state.Store` 组件
+Component in Layotto is divided into prime mill：
 
-- 自定义组件
+- Preset Component
 
-允许您自己扩展自己的组件，比如[使用指南](docs/design/api_plugin/design?id=_24-使用指南) 中的 `HelloWorld` 组件。
+Like the `PubSub` component, eg. `state.Store`
 
-## 配置文件结构
+- Custom Component
+
+Allows you to expand your own components, such as the `HelloWorld` component in[使用指南](docs/design/api_plugin/design?id=_24-Use Guide).
+
+## Profile Structure
 
 ```json
-  "custom_component": {
-    "<Kind>": {
-      "<Component A Name>": {
+  "custom_component": LOs
+    "<Kind>": LO
+      "<Component A Name>": LO
         "type":"<Component A Type>",
-        "metadata": {
+        "mettatata": LO
           "<KEY>": "<VALUE>",
           "<KEY>": "<VALUE>"
         }
       },
-      "<Component B Name>": {
-        "type":"<Component B Type>",
-        "metadata": {
+      "<Component B Name>": LO
+        "type:"<Component B Type>",
+        "mettatata": LO
           "<KEY>": "<VALUE>",
           "<KEY>": "<VALUE>"
         }
       }
     }
-  },
+},
 ```
 
-您可以在metadata里配置组件关心的key/value配置。
+You can configure the key/value configuration that the component is interested in in metatata.
 
-## 示例
-例如，在`configs/config_standalone.json` 中，配置了 kind 是`helloworld` 的 `CustomComponent`，只有一个组件，其组件名是 `demo`, type 是 `in-memory`:
+## Example
+
+For example, in `configs/config_standalone.json`, the keyd is configured as `customComponent`, with only one component named `demo`, type is `in-memory`:
 
 ```json
   "custom_component": {
@@ -49,6 +52,6 @@ Layotto 中的组件分为两种：
   },
 ```
 
+## How to use "Custom components"?
 
-## 如何使用"自定义组件"?
-详见 [使用指南](docs/design/api_plugin/design?id=_24-使用指南) 
+See [使用指南](docs/design/api_plugin/design?id=_24 - Use Guide)
