@@ -210,4 +210,4 @@ Explore other Quickstarts through the navigation bar on the left.
 
 
 #### Understand the principle of Pub/Sub API implementation
-If you are interested in the implementation principle, or want to extend some functions, you can read [Pub/Sub API design document](en/design/pubsub/pubsub-api-and-compability-with-dapr-component.md)
+If you are interested in the implementation principle, or want to extend some functions, you can read [Pub/Sub API design document](design/pubsub/pubsub-api-and-compability-with-dapr-component.md)

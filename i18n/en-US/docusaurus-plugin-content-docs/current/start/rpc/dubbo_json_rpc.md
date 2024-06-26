@@ -58,4 +58,4 @@ go run demo/rpc/dubbo_json_rpc/dubbo_json_client/client.go -d '{"jsonrpc":"2.0",
 
 ## Next Step
 
-If you are interested in the implementation principle, or want to extend some functions, you can read [RPC design document](en/design/rpc/rpc-design-doc.md)
+If you are interested in the implementation principle, or want to extend some functions, you can read [RPC design document](design/rpc/rpc-design-doc.md)

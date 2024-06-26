@@ -20,6 +20,6 @@ A: Configuration has some special capabilities, such as sidecar caching, such as
 This is like the difference between the configuration center and the database, both are storage, but the former is domain-specific and has special functions
 
 ## Quick start
-- [Use Apollo as Configuration Center](en/start/configuration/start-apollo.md)
-- [Use Etcd as Configuration Center](en/start/configuration/start.md)
-- [Use Nacos as Configuration Center](en/start/configuration/start-nacos.md)
+- [Use Apollo as Configuration Center](start/configuration/start-apollo.md)
+- [Use Etcd as Configuration Center](start/configuration/start.md)
+- [Use Nacos as Configuration Center](start/configuration/start-nacos.md)

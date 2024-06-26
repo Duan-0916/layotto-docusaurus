@@ -183,7 +183,7 @@ In fact, sdk is only a very thin package for grpc, using sdk is about equal to d
 #### Want to learn more about State API?
 What does the State API do, what problems it solves, and in what scenarios should I use it?
 
-If you have such confusion and want to know more details about State API, you can read [State API Usage Document](zh/api_reference/state/reference)
+If you have such confusion and want to know more details about State API, you can read [State API Usage Document](api_reference/state/reference)
 
 #### Details later, let's continue to experience other APIs
 Explore other Quickstarts through the navigation bar on the left.

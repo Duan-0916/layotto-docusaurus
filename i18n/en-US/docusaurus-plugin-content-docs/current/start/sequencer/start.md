@@ -174,7 +174,7 @@ In fact, sdk is only a very thin package for grpc, using sdk is about equal to d
 #### Want to learn more about Sequencer API?
 What does the Sequencer API do, what problems it solves, and in what scenarios should I use it?
 
-If you are confused and want to know more details about the use of Sequencer API, you can read [Sequencer API Usage Document](en/api_reference/sequencer/reference)
+If you are confused and want to know more details about the use of Sequencer API, you can read [Sequencer API Usage Document](api_reference/sequencer/reference)
 
 #### Details later, let's continue to experience other APIs
 Explore other Quickstarts through the navigation bar on the left.

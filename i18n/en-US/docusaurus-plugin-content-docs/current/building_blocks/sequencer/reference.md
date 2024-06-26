@@ -38,9 +38,9 @@ When you want the generated id incremental without any regression, it is recomme
 ## How to use Sequencer API
 You can call the Sequencer API through grpc. The API is defined in [runtime.proto](https://github.com/mosn/layotto/blob/main/spec/proto/runtime/v1/runtime.proto).
 
-Layotto client sdk encapsulates the logic of grpc calling. For an example of using sdk to call Sequencer API, please refer to [Quick Start: Use Sequencer API](en/start/sequencer/start.md)
+Layotto client sdk encapsulates the logic of grpc calling. For an example of using sdk to call Sequencer API, please refer to [Quick Start: Use Sequencer API](start/sequencer/start.md)
 
-The components need to be configured before use. For detailed configuration options, see [Sequencer component document](en/component_specs/sequencer/common.md)
+The components need to be configured before use. For detailed configuration options, see [Sequencer component document](component_specs/sequencer/common.md)
 ### Get next unique id
 
 ```protobuf

@@ -49,7 +49,7 @@ var (
 )
 ```
 
-Note: By default, the API will only return the health status of Layotto. If you want the API to also return the health status of the App, you need to develop a plugin that calls back the App. You can refer to [Actuator's design document](en/design/actuator/actuator-design-doc.md), or contact us directly to provide you with a detailed explanation.
+Note: By default, the API will only return the health status of Layotto. If you want the API to also return the health status of the App, you need to develop a plugin that calls back the App. You can refer to [Actuator's design document](design/actuator/actuator-design-doc.md), or contact us directly to provide you with a detailed explanation.
 
 ### /actuator/health/readiness
 Used to check the health status of Layotto and app. The health status can be used to determine "Do we need to temporarily cut off the traffic and make sure no user visit this machine"
@@ -75,7 +75,7 @@ GET,no parameters.
 }
 ```
 
-Note: By default, the API will only return the health status of Layotto. If you want the API to also return the health status of the App, you need to develop a plugin that calls back the App. You can refer to [Actuator's design document](en/design/actuator/actuator-design-doc.md), or contact us directly to provide you with a detailed explanation.
+Note: By default, the API will only return the health status of Layotto. If you want the API to also return the health status of the App, you need to develop a plugin that calls back the App. You can refer to [Actuator's design document](design/actuator/actuator-design-doc.md), or contact us directly to provide you with a detailed explanation.
 
 ## 2. Query runtime metadata API
 
@@ -107,7 +107,7 @@ We can add more information in the future:
 
 Actuator adopts a plug-in architecture, you can also add your own plug-ins as needed, and let the API return the runtime metadata you care about.
 
-Note: By default, the API will only return Layotto's runtime metadata. If you want the API to also return the App's runtime metadata, you need to develop a plugin that calls back the App. You can refer to [Actuator's design document](en/design/actuator/actuator-design-doc.md), or contact us directly to provide you with a detailed explanation.
+Note: By default, the API will only return Layotto's runtime metadata. If you want the API to also return the App's runtime metadata, you need to develop a plugin that calls back the App. You can refer to [Actuator's design document](design/actuator/actuator-design-doc.md), or contact us directly to provide you with a detailed explanation.
 
 ## 3. Explanation for API path
 
@@ -139,4 +139,4 @@ The paths registered by default are:
 ```
 
 ## 4. API usage example
-See [Quick start document](en/start/actuator/start.md)
+See [Quick start document](start/actuator/start.md)

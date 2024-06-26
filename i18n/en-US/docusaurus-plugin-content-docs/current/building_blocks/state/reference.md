@@ -20,10 +20,10 @@ Using State API can help you avoid the trouble of maintaining multilingual SDKs.
 ## How to use State API
 You can call the State API through grpc. The API is defined in [runtime.proto](https://github.com/mosn/layotto/blob/main/spec/proto/runtime/v1/runtime.proto).
 
-The component needs to be configured before use. For detailed configuration items, see [State Component Document](en/component_specs/state/common.md)
+The component needs to be configured before use. For detailed configuration items, see [State Component Document](component_specs/state/common.md)
 
 ### Example
-Layotto client sdk encapsulates the logic of grpc call. For examples of using sdk to call State API, please refer to [Quick Start: Use State API](en/start/state/start.md)
+Layotto client sdk encapsulates the logic of grpc call. For examples of using sdk to call State API, please refer to [Quick Start: Use State API](start/state/start.md)
 
 
 ### Save state

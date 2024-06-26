@@ -7,7 +7,7 @@ File api is used to implement file operations. Applications can perform CRUD ope
 ## How to use File API
 You can call the File API through grpc. The API is defined in [runtime.proto](https://github.com/mosn/layotto/blob/main/spec/proto/runtime/v1/runtime.proto).
 
-The component needs to be configured before use. Different components should have own configuration.For OSS detail configuration items, see [OSS Component Document](en/component_specs/file/oss.md)
+The component needs to be configured before use. Different components should have own configuration.For OSS detail configuration items, see [OSS Component Document](component_specs/file/oss.md)
 
 ### Example
 

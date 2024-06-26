@@ -5,10 +5,10 @@ The distributed lock API is based on a certain storage system (such as Etcd, Zoo
 ## How to use distributed lock API
 You can call the distributed lock API through grpc. The API is defined in [runtime.proto](https://github.com/mosn/layotto/blob/main/spec/proto/runtime/v1/runtime.proto).
 
-The component needs to be configured before use. For detailed configuration instructions, see [Distributed Lock Component Document](en/component_specs/lock/common.md)
+The component needs to be configured before use. For detailed configuration instructions, see [Distributed Lock Component Document](component_specs/lock/common.md)
 
 ### Example
-Layotto client sdk encapsulates the logic of grpc calling. For an example of using sdk to call distributed lock API, please refer to [Quick Start: Using Distributed Lock API](en/start/lock/start.md)
+Layotto client sdk encapsulates the logic of grpc calling. For an example of using sdk to call distributed lock API, please refer to [Quick Start: Using Distributed Lock API](start/lock/start.md)
 
 
 ### TryLock
@@ -76,4 +76,4 @@ req.LockOwner = uuid.New().String()
 To avoid inconsistencies between the documentation and the code, please refer to [proto file](https://github.com/mosn/layotto/blob/main/spec/proto/runtime/v1/runtime.proto) for detailed input parameters and return values
 
 ## Why is the distributed lock API designed like this
-If you are interested in the implementation principle and design logic, you can refer to [Distributed Lock API Design Document](en/design/lock/lock-api-design)
+If you are interested in the implementation principle and design logic, you can refer to [Distributed Lock API Design Document](design/lock/lock-api-design)

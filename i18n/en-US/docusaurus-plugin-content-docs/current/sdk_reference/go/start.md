@@ -66,7 +66,7 @@ func main() {
 
 Start Layotto and test the HelloWorld program above by using the simplest configuration file, the content is as follows:
 
-> For a more detailed introduction to configuration files, please refer to [configuration](en/configuration/overview.md).
+> For a more detailed introduction to configuration files, please refer to [configuration](configuration/overview.md).
 
 ```json
 {
@@ -141,7 +141,7 @@ NewClientWithConnection(conn *grpc.ClientConn) Client
 
 ## Experience other interface functions
 
-Taking the distributed id `sequencer` as an example, use the 'redis' type. Please refer to this [document](en/component_specs/sequencer/redis. md) for relevant parameters usage.
+Taking the distributed id `sequencer` as an example, use the 'redis' type. Please refer to this [document](component_specs/sequencer/redis. md) for relevant parameters usage.
 
 Please refer to `demo/sequencer/common/client.go` for specific code configuration, as follows:
 
@@ -258,7 +258,7 @@ Currently, go-sdk only encapsulates GRPC with a thin layer, so for interfaces th
 
 Here, take the `local` component type in the `file` interface as an example.
 
-You can view the proto files in [`spec/proto/runtime`](https://github.com/mosn/layotto/tree/main/spec/proto/runtime/v1) or the [GRPC API docs](en/api_reference/README.md)
+You can view the proto files in [`spec/proto/runtime`](https://github.com/mosn/layotto/tree/main/spec/proto/runtime/v1) or the [GRPC API docs](api_reference/README.md)
 
 The complete code reference is `demo/file/local/client.go`, and the content is as follows:
 
@@ -344,6 +344,6 @@ func main() {
 
 ## More Examples
 
-For other SDK interfaces, please refer to the code examples in the [demo directory](https://github.com/mosn/layotto/tree/main/demo) and [quick start startup document](en/start/state/state.md)
+For other SDK interfaces, please refer to the code examples in the [demo directory](https://github.com/mosn/layotto/tree/main/demo) and [quick start startup document](start/state/state.md)
 
-Refer to the [configs example](https://github.com/mosn/layotto/tree/main/configs) for writing relevant configuration files and [Component Configuration Document](en/configuration/overview.md)
+Refer to the [configs example](https://github.com/mosn/layotto/tree/main/configs) for writing relevant configuration files and [Component Configuration Document](configuration/overview.md)

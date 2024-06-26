@@ -36,4 +36,4 @@ The configuration item in `grpc_config` is Layotto's component configuration, th
 }
 ```
 
-As for what to fill in each `<API NAME>`, what is each `<COMPONENT NAME>`, and which `"<KEY>": "<VALUE>"` configuration items can be configured with the components, you can refer to [Component specs](en/component_specs/overview) .
+As for what to fill in each `<API NAME>`, what is each `<COMPONENT NAME>`, and which `"<KEY>": "<VALUE>"` configuration items can be configured with the components, you can refer to [Component specs](component_specs/overview) .

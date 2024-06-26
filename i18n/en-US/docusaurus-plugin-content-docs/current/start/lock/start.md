@@ -159,4 +159,4 @@ Explore other Quickstarts through the navigation bar on the left.
 
 ### Understand the design principle of Distributed Lock API
 
-If you are interested in the design principle, or want to extend some functions, you can read [Distributed Lock API design document](en/design/lock/lock-api-design.md)
+If you are interested in the design principle, or want to extend some functions, you can read [Distributed Lock API design document](design/lock/lock-api-design.md)

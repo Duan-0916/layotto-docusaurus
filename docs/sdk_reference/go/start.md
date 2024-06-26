@@ -140,7 +140,7 @@ NewClientWithConnection(conn *grpc.ClientConn) Client
 
 ## 体验其他接口函数
 
-以分布式id `sequencer` 为例，使用 `redis` 类型，相关参数请参考这篇[文档](zh/component_specs/sequencer/redis.md).
+以分布式id `sequencer` 为例，使用 `redis` 类型，相关参数请参考这篇[文档](docs/component_specs/sequencer/redis.md).
 
 具体代码配置参考 `demo/sequencer/common/client.go`，内容如下.
 
@@ -259,7 +259,7 @@ localhost:6379> get "sequencer|||app1||key666"
 
 这里以 `file` 接口中的 `local` 组件类型为例。
 
-通过可以查看 [`spec/proto/runtime`](https://github.com/mosn/layotto/tree/main/spec/proto/runtime/v1) 中的 proto 文件或[GRPC API文档](zh/api_reference/README.md)
+通过可以查看 [`spec/proto/runtime`](https://github.com/mosn/layotto/tree/main/spec/proto/runtime/v1) 中的 proto 文件或[GRPC API文档](docs/api_reference/README.md)
 
 完整代码参考 `demo/file/local/client.go`，内容如下：
 

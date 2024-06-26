@@ -10,7 +10,7 @@ There are some ways to deploy Layotto that you can find below.
 
 ### Deploy Layotto using released binaries
 
-You can start Layotto directly via executing the binary file. Refer to the [Quick start](en/start) guide.
+You can start Layotto directly via executing the binary file. Refer to the [Quick start](start) guide.
 
 ### Deploy using Docker
 
@@ -25,7 +25,7 @@ It does not contain a `config.json` configuration file in the image, you can mou
 docker run -v "$(pwd)/configs/config.json:/runtime/configs/config.json" -d  -p 34904:34904 --name layotto layotto/layotto start
 ```
 
-Of course, you can also run Layotto and other systems (such as Redis) at the same time via docker-compose. Refer to the [Quick start](en/start/state/start?id=step-1-deploy-redis-and-layotto)
+Of course, you can also run Layotto and other systems (such as Redis) at the same time via docker-compose. Refer to the [Quick start](start/state/start?id=step-1-deploy-redis-and-layotto)
 
 ### Deploy on Kubernetes
 

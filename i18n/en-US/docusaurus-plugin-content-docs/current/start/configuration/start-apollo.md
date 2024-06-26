@@ -39,7 +39,7 @@ After success, a new layotto file will be generated in the directory. Let's run 
 >
 >A: With the default configuration, Layotto will connect to apollo's demo server, but the configuration in that demo server may be modified by others. So the error may be because some configuration has been modified.
 >
-> In this case, you can try other demos, such as [the etcd demo](en/start/configuration/start.md)
+> In this case, you can try other demos, such as [the etcd demo](start/configuration/start.md)
 
 ## Step 3. Run the client demo 
 
