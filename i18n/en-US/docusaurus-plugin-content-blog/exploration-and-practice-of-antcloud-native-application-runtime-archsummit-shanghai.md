@@ -2,7 +2,7 @@
 
 > The introduction of the Mesh model is a key path to the application of clouds and ant groups have achieved mass landings internally.The sinking of more middleware capabilities, such as Message, DB, Cache Mesh and others, will be the future shape of intermediate technology when the app evolves from Mesh.Apps run to help developers construct cloud native apps quickly and to further decouple apps and infrastructure, while the app runs at the core of API standards, the community is expected to build together.
 
-> ![](https://gw.alipayobjects.com/mdn/rms_1c90e8/afts/img/A*nergRo8-RI0AAAAAAAAAAAAAARQnAQ)
+>![](https://gw.alipayobjects.com/mdn/rms_1c90e8/afts/img/A*nergRo8-RI0AAAAAAAAAAAAAARQnAQ)
 
 ## Ant Group Mesh Introduction
 
@@ -84,7 +84,7 @@ Can interoperability protocols be unified?
 
 Can the implementation of the bottom be replaced?
 
->![](https://gw.alipayobjects.com/mdn/rms_1c90e8/afts/img/A*J76nQoLLYWgAAAAAAAAAAAAAARQnAQ)
+>![](https://gw.alipayobjects.com/mdn/rms_1c90e8/afts/img/A*hsZBQJg0VnoAAAAAAAAAAAAAARQnAQ)
 
 ## Ant Cloud Native Apps Runtime Structure
 
@@ -116,33 +116,33 @@ With this principle, we abstract out the primary API, which is the app for mosn.
 
 Three examples of this proto can be seen at：
 
->![](https://gw.alipayobjects.com/mdn/rms_1c90e8/afts/img/A*iqQoTYAma4YAAAAAAAAAAAAAARQnAQ)
+>![](https://gw.alipayobjects.com/mdn/rms_1c90e8/afts/img/A*J76nQoLLYWgAAAAAAAAAAAAAARQnAQ)
 
 **Run Component Controls**
 
 On the other hand, we have two concepts in MOSN for the purpose of realizing replaceability when running. We call a distribution capability and then have a different component to perform this Service, a service that can be implemented with multiple components, and a component that can deliver multiple services.For example, the example in the graph is that the service with the message "MQ-pub" is implemented by SOFAMQ and Kafka Component, while Kafka Component implements both the message and health check service.
 When a transaction is actually requested via a gRPC-generated client, the data will be sent to Runtime via the gRPC protocol and distributed to the next specific implementation.In this way, the app needs to use only the same set of API, which can be implemented differently by the parameters in the request or when the configuration is running.
 
->![](https://gw.alipayobjects.com/mdn/rms_1c90e8/afts/img/A*J76nQoLLYWgAAAAAAAAAAAAAARQnAQ)
+>![](https://gw.alipayobjects.com/mdn/rms_1c90e8/afts/img/A*dK9rRLTvtlMAAAAAAAAAAAAAARQnAQ)
 
 **Compare between runtime and Mesh**
 
 Based on the above, when the cloud app is running and just just Mesh are easy to compare with：
 
->![](https://gw.alipayobjects.com/mdn/rms_1c90e8/afts/img/A*dK9rRLTvtlMAAAAAAAAAAAAAARQnAQ)
+>![](https://gw.alipayobjects.com/mdn/rms_1c90e8/afts/img/A*xyu9T74SD9MAAAAAAAAAAAAAARQnAQ)
 
 Scene
 started research last year while the cloud native app is running. The following scenes are currently falling inside the ant area.
 
 **Isomer Technical Stack Access**
 
->![](https://gw.alipayobjects.com/mdn/rms_1c90e8/afts/img/A*xyu9T74SD9MAAAAAAAAAAAAAARQnAQ)
+>![](https://gw.alipayobjects.com/mdn/rms_1c90e8/afts/img/A*8UJhRbBg3zsAAAAAAAAAAAAAARQnAQ)
 
 In the case of ants, applications in different languages, in addition to the need for RPC service governance, messages, etc., the infrastructure capabilities such as the one-size-fits-all intermediate of the ant are desirable and Java and Nodejs have corresponding SDKs, while the other languages are not corresponding SDKs.After the application runs, these isomer languages can be used directly through GRPC Client to the ant infrastructure.
 
 **Unbind the manufacturer**
 
->![](https://gw.alipayobjects.com/mdn/rms_1c90e8/afts/img/A*8UJhRbBg3zsAAAAAAAAAAAAAARQnAQ)
+>![](https://gw.alipayobjects.com/mdn/rms_1c90e8/afts/img/A*eVoqRbkTFFwAAAAAAAAAAAAAARQnAQ)
 
 As mentioned earlier, ant blockchains, wind control, intelligent support services, financial intermediaries, etc., are scenes where they are deployed on their main stations, where there is either Aliyun or cloud.After running, the app can combine a set of code with a mirror when running. By configuring it to determine which bottom layer of implementation to be called, without being bound to specific implementations.For example, the internal interface between ant is for products such as SOFARegistration and SOFAMQ, and on the cloud is for products such as Nacos, RocketMQ, to Zokeper, Kafka and others.This scenario is in the process of reaching us.Of course, this can also be used for legacy system governance, such as upgrading from SOFAMQ 1.0 to SOFAMQ 2.0, and then running apps need not be upgraded.
 
@@ -156,13 +156,13 @@ FaaS Cool is also a recent scene we are exploring and you know that the Function
 
 The most important part of the running time is the definition of the API. We already have a more complete set of APIs for the sake of getting inside, but we also see that many products in industry have similar demands, such as dapr, envoy, etc.So one of the next things we will do is to bring together communities to launch a set of recognized cloud native API.
 
->![](https://gw.alipayobjects.com/mdn/rms_1c90e8/afts/img/A*eVoqRbkTFFwAAAAAAAAAAAAAARQnAQ)
+>![](https://gw.alipayobjects.com/mdn/rms_1c90e8/afts/img/A*d2BORogVotoAAAAAAAAAAAAAARQnAQ)
 
 **Continuous Open Source**
 
 We will also develop our internal running practice in the near future, with a release of 0.1 in May and June, and keep a small monthly release pace, aiming to publish 1.0 by the end of the year.
 
->![](https://gw.alipayobjects.com/mdn/rms_1c90e8/afts/img/A*d2BORogVotoAAAAAAAAAAAAAARQnAQ)
+>![](https://gw.alipayobjects.com/mdn/rms_1c90e8/afts/img/A*Kgr9QLc5TH4AAAAAAAAAAAAAARQnAQ)
 
 ## Summary
 
